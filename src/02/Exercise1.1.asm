@@ -15,6 +15,11 @@ main:                       # execution starts here
     # print result
     jal printResult
 
+    # print my information
+    la $a0, print_myInfo
+    li $v0, 4    # system call to print string ($a0 = address)
+    syscall
+
     li $v0, 10              # system call to exit
     syscall
     
@@ -130,6 +135,7 @@ print_RP: .asciiz ")"   #right parenthesis
 print_plus: .asciiz " + "   #right parenthesis
 print_mult: .asciiz " * "
 print_slash: .asciiz " / "
+print_myInfo: .asciiz "Name: Jiachen Zhang\nStdID: 11713020"
 
 # reference:
 # mult $t3, $t4         # (Hi, Lo) = $t3 * $t4

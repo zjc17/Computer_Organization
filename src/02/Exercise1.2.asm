@@ -1,5 +1,5 @@
 # 计算 (a + b * c) / d 的商和余数，同时输出自己的学号和姓名
-# a, b, c, d 的�?�在source file中给�?? (a, b, c, d 为整形数�??
+# a, b, c, d 的�?�在source file中给�??? (a, b, c, d 为整形数�???
 
 # text segment
     .text
@@ -15,6 +15,11 @@ main:                       # execution starts here
     jal Compute             # compute (a + b * c) / d
     # print result
     jal printResult
+    
+    # print my information
+    la $a0, print_myInfo
+    li $v0, 4    # system call to print string ($a0 = address)
+    syscall
 
     li $v0, 10              # system call to exit
     syscall
@@ -174,6 +179,7 @@ print_promptA:  .asciiz "Please input your integer a: "
 print_promptB:  .asciiz "Please input your integer b: "
 print_promptC:  .asciiz "Please input your integer c: "
 print_promptD:  .asciiz "Please input your integer d: "
+print_myInfo: .asciiz "Name: Jiachen Zhang\nStdID: 11713020"
 
 # reference:
 # mult $t3, $t4         # (Hi, Lo) = $t3 * $t4
