@@ -5,6 +5,7 @@
     .text
     .global main
 main:                       # execution starts here
+    jal printPrompt
     jal printProblem
     # In order to compute, $a0 = a, $a1 = b, $a2 = c, $a3 = d
     lw $a0, a
@@ -18,6 +19,43 @@ main:                       # execution starts here
     li $v0, 10              # system call to exit
     syscall
     
+printPrompt:
+    la $a0, print_question
+    li $v0, 4    # system call to print string ($a0 = address)
+    syscall
+    # a-prompt
+    la $a0, print_promptA
+    li $v0, 4    # system call to print string ($a0 = address)
+    syscall
+    # a - read
+    li $v0, 5               # system call to read_int in v0
+    syscall
+    sw $v0, a               # put integer address into a0
+    # b-prompt
+    la $a0, print_promptB
+    li $v0, 4    # system call to print string ($a0 = address)
+    syscall
+    # b - read
+    li $v0, 5               # system call to read_int in v0
+    syscall
+    sw $v0, b               # put integer address into a0
+    # c-prompt
+    la $a0, print_promptC
+    li $v0, 4    # system call to print string ($a0 = address)
+    syscall
+    # c - read
+    li $v0, 5               # system call to read_int in v0
+    syscall
+    sw $v0, c               # put integer address into a0
+    # d-prompt
+    la $a0, print_promptD
+    li $v0, 4    # system call to print string ($a0 = address)
+    syscall
+    # d - read
+    li $v0, 5               # system call to read_int in v0
+    syscall
+    sw $v0, d               # put integer address into a0
+    jr $ra
 
 printProblem:
     # we want to compute 
@@ -63,6 +101,7 @@ printProblem:
     la $a0, print_newLine
     li $v0, 4    # system call to print string ($a0 = address)
     syscall
+    jr $ra
 # compute (a + b * c) / d, store result in quotient and remainder
 Compute:    # $a0 = a, $a1 = b, $a2 = c, $a3 = d
     # $t1 = b * c
@@ -130,6 +169,11 @@ print_RP: .asciiz ")"   #right parenthesis
 print_plus: .asciiz " + "   #right parenthesis
 print_mult: .asciiz " * "
 print_slash: .asciiz " / "
+print_question: .asciiz "We want to compute (a + b * c) / d.\n"
+print_promptA:  .asciiz "Please input your integer a: "
+print_promptB:  .asciiz "Please input your integer b: "
+print_promptC:  .asciiz "Please input your integer c: "
+print_promptD:  .asciiz "Please input your integer d: "
 
 # reference:
 # mult $t3, $t4         # (Hi, Lo) = $t3 * $t4
