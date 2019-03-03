@@ -1,12 +1,32 @@
+<center><font size="6">计算机组成原理实验报告</font><center/>
+
+<center>姓名： 张佳晨              学号：11713020<center/>
+
+
 ## 一、 实验目的
 
+1. Learn about compilers translating assembly language into machine language, which can be executed directly on a specific computer.
 
+2. Learn to code assembly language called MIPS and use the assembler named MARS.
+
+3. Know the differences between high-level programming language (like Java) and the assembly language (like MIPS).
+
+4. Understand the process of MIPS's processing instructions, including data loading and storing, registers and three kind of addressing (load address, indirect addressing and based or indexed addressing).
+
+5. Learn to use Arithmetic instructions and system calls(dominantly about I/O processing).
 
 ## 二、 实验内容
 
-
+1. Use `.data` to make data declare section, which follows the program code section, to declare user defined variables.
+2. Use system calls to prompt users inputting an integer and store it.
+3. Use load instructions to load data on the memory.
+4. Use arithmetic instructions to make computations.
+5. Use indexed addressing and load byte instruction to get a character, which occupies only one byte.
+6. Make use of the registers to help processing data.
 
 ## 三、 实验步骤（阐述代码思路或操作步骤）
+
+> 代码思路与操作步骤均在详细的注释中展示
 
 ### Problem 1.1
 
@@ -347,7 +367,6 @@ main:                       # execution starts here
 
 lowerToUpper:
     la $a0, str
-    lw $v0, ($a0)
     lb $t1, 0($a0)
     lb $t2, 1($a0)
     lb $t3, 2($a0)
@@ -394,10 +413,38 @@ print_str2: .asciiz "> to upper case\n"
 
 ### Problem 1.2
 
-![1551178459536](F:\Github\Computer_Organization\doc\Lab-Report\1.2-1)
+![1551178459536](1.2-1)
+
+> I set a, b, c, d equals 4, 3, 1, 6, respectively.
+
+> The result is (4 + 3 * 1)  / 6 = 1 ······ 1
+
+![1551178459536](1.2-2.jpg)
+
+> I set a, b, c, d equals 3, 7, 10, 6, respectively.
+
+> The result is (3 + 7 * 10)  / 6 = 12 ······ 1
+
+### Problem 2
+
+![1551178459536](2.jpg)
+
+> I change the string `abc` to `ABC` at the same memory address.
 
 ## 五、 实验分析（遇到的问题以及解决方案）
 
+P1: I could not directly use the arithmetic instruction to processing data on the memory.
 
+> Arithmetic instruction only compute data on the registers.
+
+P2: I could not get the `a` by using `lw` instruction.
+
+> The character `a` store in one byte while `lw` instruction access one word data, which is four bytes.
+>
+> So in order to get only `a`, I need to use `lb` instruction and the indexed access addressing to get `b` and `c`.
 
 ## 六、 实验小结与体会
+
+1. For assembly language, instructions executing is based on the address and only has the ability to compute data on the registers directly, so the data accessing, loading and storing is a significant procedure for assembly code. 
+2. The comments is very important for writing assembly codes as one simple instruction (for high-level language) is constructed by many assembly instruction, because of the data accessing.
+3. I should have a clearly concept about whether I am going to get address or the data on the memory which has the specific address.

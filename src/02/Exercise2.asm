@@ -18,7 +18,6 @@ main:                       # execution starts here
 
 lowerToUpper:
     la $a0, str
-    lw $v0, ($a0)
     lb $t1, 0($a0)
     lb $t2, 1($a0)
     lb $t3, 2($a0)
