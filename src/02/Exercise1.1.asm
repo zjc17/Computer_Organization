@@ -68,6 +68,7 @@ printProblem:
     la $a0, print_newLine
     li $v0, 4    # system call to print string ($a0 = address)
     syscall
+    jr $ra
 # compute (a + b * c) / d, store result in quotient and remainder
 Compute:    # $a0 = a, $a1 = b, $a2 = c, $a3 = d
     # $t1 = b * c
