@@ -5,30 +5,19 @@
 
 ## 一、 实验目的
 
-**完成第三个板块**
-
-1. Learn about compilers translating assembly language into machine language, which can be executed directly on a specific computer.
-
-2. Learn to code assembly language called MIPS and use the assembler named MARS.
-
-3. Know the differences between high-level programming language (like Java) and the assembly language (like MIPS).
-
-4. Understand the process of MIPS's processing instructions, including data loading and storing, registers and three kind of addressing (load address, indirect addressing and based or indexed addressing).
-
-5. Learn to use Arithmetic instructions and system calls(dominantly about I/O processing).
+1. Learn how to exchange the highest 8 bits with the lowest 8 bits in a word.
+2. Know about calculating the bit inversion (0->1,1->0) of the odd digits in a word.
+3. Learn about logically shifting. For example, given an integer x, calculate the result of 10x. DO NOT use mult/mul/multu in your code.
+4. Calculate the absolute value of a word by basic operations other than abs. 
 
 ## 二、 实验内容
 
-1. Use `.data` to make data declare section, which follows the program code section, to declare user defined variables.
-2. Use system calls to prompt users inputting an integer and store it.
-3. Use load instructions to load data on the memory.
-4. Use arithmetic instructions to make computations.
-5. Use indexed addressing and load byte instruction to get a character, which occupies only one byte.
-6. Make use of the registers to help processing data.
+1. Exchange the highest 8 bits with the lowest 8 bits in a word.
+2. Calculate the bit inversion (0->1,1->0) of the odd digits in a word.
+3. For an integer x, calculate the result of 10x. DO NOT use mult/mul/multu in your code.
+4. Calculate the absolute value of a word by basic operations other than abs. 
 
 ## 三、 实验步骤（阐述代码思路或操作步骤）
-
-> 代码思路与操作步骤均在详细的注释中展示
 
 ### Problem 1
 
@@ -125,7 +114,7 @@ main:                       	# execution starts here
     END
 
 odd_bit_inversion:  			# make odd_bit_inversion for the value stored in $t0, and store the result in  $t0
-    xori   $t0, $t0, 0x55555555       	# 01010101010101010101010101010101
+    xori   $t0, $t0, 0xaaaaaaaa       	# 10101010101010101010101010101010
     jr		$ra							# jump to $ra
     
 
@@ -256,7 +245,7 @@ absolute: # get absolute value of which store in $t0, and store the result in  $
 
 > Here I initially set the value is `-1` = `0xffffffff`
 
-> The output is `-1431655766` = `0xaaaaaaaa`.
+> The output is `1431655765` = `0x55555555`.
 
 ### Problem 3
 
@@ -280,18 +269,10 @@ absolute: # get absolute value of which store in $t0, and store the result in  $
 
 ## 五、 实验分析（遇到的问题以及解决方案）
 
-P1: I could not directly use the arithmetic instruction to processing data on the memory.
-
-> Arithmetic instruction only compute data on the registers.
-
-P2: I could not get the `a` by using `lw` instruction.
-
-> The character `a` store in one byte while `lw` instruction access one word data, which is four bytes.
->
-> So in order to get only `a`, I need to use `lb` instruction and the indexed access addressing to get `b` and `c`.
+> Not yet
 
 ## 六、 实验小结与体会
 
-1. For assembly language, instructions executing is based on the address and only has the ability to compute data on the registers directly, so the data accessing, loading and storing is a significant procedure for assembly code. 
+1. Shift left logically is an efficient way to do specific multiplication.
 2. The comments is very important for writing assembly codes as one simple instruction (for high-level language) is constructed by many assembly instruction, because of the data accessing.
-3. I should have a clearly concept about whether I am going to get address or the data on the memory which has the specific address.
+3. Using bit operation is an efficient way for programming.

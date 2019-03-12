@@ -34,7 +34,7 @@ main:                       # execution starts here
     END
 
 odd_bit_inversion:  # make odd_bit_inversion for the value stored in $t0, and store the result in  $t0
-    xori   $t0, $t0, 0x55555555       # 01010101010101010101010101010101
+    xori   $t0, $t0, 0xaaaaaaaa       # 10101010101010101010101010101010
     jr		$ra					# jump to $ra
     
 
