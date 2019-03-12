@@ -242,35 +242,41 @@ absolute: # get absolute value of which store in $t0, and store the result in  $
 
 ## 四、 实验结果（截图并配以适当的文字说明）
 
-### Problem 1.1
+### Problem 1
 
-![1551178172730](1.1-1.png)
+![1552195585764](1)
 
-> Here I initially set a = 1, b = 2, c = 3 and d = 3.
+> Here I initially set the value is `251658325` = `0x0f000055`
 
-> I print the formula on the screen.
-
-> I store the result in the variables named quotient and remainder.
-
-### Problem 1.2
-
-![1551178459536](1.2-1)
-
-> I set a, b, c, d equals 4, 3, 1, 6, respectively.
-
-> The result is (4 + 3 * 1)  / 6 = 1 ······ 1
-
-![1551178459536](1.2-2.jpg)
-
-> I set a, b, c, d equals 3, 7, 10, 6, respectively.
-
-> The result is (3 + 7 * 10)  / 6 = 12 ······ 1
+> The output is `1426063375` = `0x5500000f`, which is shown in the picture.
 
 ### Problem 2
 
-![1551178459536](2.jpg)
+![1552195816774](2)
 
-> I change the string `abc` to `ABC` at the same memory address.
+> Here I initially set the value is `-1` = `0xffffffff`
+
+> The output is `-1431655766` = `0xaaaaaaaa`.
+
+### Problem 3
+
+![1552195936447](3)
+
+> Here I initially set the value is `18` 
+
+> The output is `180`
+
+### Problem 4
+
+![1552196009510](4)
+
+> Here I initially set the value is `-1` 
+
+> The output is `1`
+
+> Then I set the value is `1` 
+
+> The output is `1`
 
 ## 五、 实验分析（遇到的问题以及解决方案）
 
