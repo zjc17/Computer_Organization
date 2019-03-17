@@ -14,29 +14,9 @@
 	.globl main
 	
 	main:
-	lw	$s0,	a
-	lw	$s1,	b
-	jal	print_ini
-	print_string("\n$s0 - $s1 = ")
-	sub	$t0,	$s0,	$s1
-	sw	$t0,	c
-	move	$a0,	$t0
-	li	$v0,	36
-	syscall
-
-	
-	END
-print_ini:
-	print_string("\n$s0 = ")
-	move	$a0,	$s0
-	li	$v0,	1
-	syscall
-	
-	print_string("\n$s1 = ")
-	move	$a0,	$s1
-	li	$v0,	1
-	syscall
-	jr 	$ra
+	li $t0, 1
+	sll $t2, $t0, 4
+	andi $t2, $t2, -1
 	.data
 a: 	.word 	0x80000000
 b: 	.word	0xD0000000

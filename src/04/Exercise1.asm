@@ -87,7 +87,7 @@ printResult:
         addi	$t1, $t1, 1
         beq     $t0, 400, end_loop_array   # prevent overflow and return
         lb		$t2, 0($t1)		# 
-        bne		$t2, $s2, loop_array	# if $t2 == $s2 then target
+        bne		$t2, $s2, loop_array	# if $t2 == $s2(-1) then target
         addi    $s3, $s3, 1
         move 	$a0, $t0		# $a0 = $t0
         li      $v0, 1
@@ -97,18 +97,7 @@ printResult:
     end_loop_array:
     jr		$ra					# jump to $ra
 
-printDate:
-    # print the date on which I finish this exercise
-    la $a0, date
-    li $v0, 4    # system call to print string ($a0 = address)
-    syscall
-    jr $ra
-
-
-
-
     .data
-date:   .ascii "2019-03-03"     # the date on which I finish this exercise
 space:   .ascii " "     
 x:      .word   1
 y:      .word   1
