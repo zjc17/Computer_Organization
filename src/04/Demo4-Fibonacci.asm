@@ -12,7 +12,7 @@
     .text
     .global main
     main:
-    li		$a0, 7		# $a0 = 5
+    li		$a0, 6		# $a0 = 5
     jal     fib
     add     $a0, $v0, $zero
     li      $v0,    1
