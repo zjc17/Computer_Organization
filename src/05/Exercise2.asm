@@ -22,7 +22,7 @@
         end
 
         Invalid_Entry_End:
-            print_string("\nInvalid Entry\nSystem Exits")
+            print_string("\nInvalid Entry")
             end
     print_digits:
         addi	$sp, $sp, -16			# $sp = $sp + 16
