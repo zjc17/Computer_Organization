@@ -15,6 +15,10 @@
     .text
     .global main
     main:
+    	#################################### get the precision #################################################
+    	# print_string(" > Please input the precision:\n > ")
+    	# li 	$v0, 6		# syscall to read float in $f0
+    	# syscall
     	############# get the minimum difference (in $f0)  (which is the precision of float value) #############
        	li 	$t0, 5
        	mtc1 	$t0, $f0
@@ -25,7 +29,7 @@
         div.s	$f0, $f0, $f1			
         ########################################################################################################
         
-	    ############################# get the integer to compute square root ###################################
+	############################# get the integer to compute square root ###################################
         print_string(" > Please input an integer which you want to get the square root of: \n > ")
         li      $v0, 5
         syscall                         # get an integer number from syscall
