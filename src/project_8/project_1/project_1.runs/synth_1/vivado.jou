@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Apr  9 10:30:09 2019
-# Process ID: 17728
+# Start of session at: Tue Apr  9 11:16:56 2019
+# Process ID: 8116
 # Current directory: F:/Github/Computer_Organization/src/project_8/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log multiplier_2_bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multiplier_2_bit.tcl
 # Log file: F:/Github/Computer_Organization/src/project_8/project_1/project_1.runs/synth_1/multiplier_2_bit.vds

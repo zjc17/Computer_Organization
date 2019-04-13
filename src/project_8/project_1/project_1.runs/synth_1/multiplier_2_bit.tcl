@@ -16,7 +16,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7a100tfgg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -26,6 +28,7 @@ set_property webtalk.parent_dir F:/Github/Computer_Organization/src/project_8/pr
 set_property parent.project_path F:/Github/Computer_Organization/src/project_8/project_1/project_1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths f:/github/computer_organization/src/project_8/project_1/project_1.srcs [current_project]
 set_property ip_output_repo f:/Github/Computer_Organization/src/project_8/project_1/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib F:/Github/Computer_Organization/src/project_8/project_1/project_1.srcs/sources_1/new/2-bit_multiplier.v
@@ -37,8 +40,8 @@ read_verilog -library xil_defaultlib F:/Github/Computer_Organization/src/project
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/Github/Computer_Organization/src/project_8/project_1/project_1.srcs/constrs_1/new/multiplier_2bit.xdc
-set_property used_in_implementation false [get_files F:/Github/Computer_Organization/src/project_8/project_1/project_1.srcs/constrs_1/new/multiplier_2bit.xdc]
+read_xdc F:/Github/Computer_Organization/src/project_8/project_1/project_1.srcs/constrs_2/imports/new/multiplier_2bit.xdc
+set_property used_in_implementation false [get_files F:/Github/Computer_Organization/src/project_8/project_1/project_1.srcs/constrs_2/imports/new/multiplier_2bit.xdc]
 
 
 synth_design -top multiplier_2_bit -part xc7a100tfgg484-1

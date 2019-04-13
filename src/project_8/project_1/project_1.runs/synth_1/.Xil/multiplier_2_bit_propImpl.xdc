@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:F:/Github/Computer_Organization/src/project_8/project_1/project_1.srcs/constrs_1/new/multiplier_2bit.xdc rfile:../../../project_1.srcs/constrs_1/new/multiplier_2bit.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:F:/Github/Computer_Organization/src/project_8/project_1/project_1.srcs/constrs_2/imports/new/multiplier_2bit.xdc rfile:../../../project_1.srcs/constrs_2/imports/new/multiplier_2bit.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T5 [get_ports {A[1]}]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
