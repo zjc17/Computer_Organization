@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../multiplexer.ip_user_files/bd/mux2x1/ipshared/0952/notgate.v" \
+"../../../../multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_notgate_0_0/sim/mux2x1_notgate_0_0.v" \
+"../../../../multiplexer.ip_user_files/bd/mux2x1/sim/mux2x1.v" \
+"../../../../multiplexer.ip_user_files/bd/mux2x1/ipshared/ceda/orgate.v" \
+"../../../../multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_orgate_0_0/sim/mux2x1_orgate_0_0.v" \
+"../../../../multiplexer.ip_user_files/bd/mux2x1/ipshared/09df/andgate.v" \
+"../../../../multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_2/sim/mux2x1_andgate_0_2.v" \
+"../../../../multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_3/sim/mux2x1_andgate_0_3.v" \
+"../../../../multiplexer.srcs/sim_1/new/sim_mux2x1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

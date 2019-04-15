@@ -1,0 +1,32 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 19fab5b5f8d1419391ffd9e2c4004fed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_mux2x1_behav xil_defaultlib.sim_mux2x1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port c [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_2/sim/mux2x1_andgate_0_2.v:72]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port d [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_2/sim/mux2x1_andgate_0_2.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port e [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_2/sim/mux2x1_andgate_0_2.v:74]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port f [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_2/sim/mux2x1_andgate_0_2.v:75]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port g [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_2/sim/mux2x1_andgate_0_2.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port h [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_2/sim/mux2x1_andgate_0_2.v:77]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port c [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_3/sim/mux2x1_andgate_0_3.v:72]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port d [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_3/sim/mux2x1_andgate_0_3.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port e [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_3/sim/mux2x1_andgate_0_3.v:74]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port f [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_3/sim/mux2x1_andgate_0_3.v:75]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port g [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_3/sim/mux2x1_andgate_0_3.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port h [F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_3/sim/mux2x1_andgate_0_3.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.andgate(WIDTH=1)
+Compiling module xil_defaultlib.mux2x1_andgate_0_2
+Compiling module xil_defaultlib.mux2x1_andgate_0_3
+Compiling module xil_defaultlib.notgate(WIDTH=1)
+Compiling module xil_defaultlib.mux2x1_notgate_0_0
+Compiling module xil_defaultlib.orgate(WIDTH=1)
+Compiling module xil_defaultlib.mux2x1_orgate_0_0
+Compiling module xil_defaultlib.mux2x1
+Compiling module xil_defaultlib.sim_mux2x1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_mux2x1_behav

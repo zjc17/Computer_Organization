@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Apr 16 00:53:13 2019
+# Process ID: 5840
+# Current directory: F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.runs/synth_1
+# Command line: vivado.exe -log mux2x1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux2x1_wrapper.tcl
+# Log file: F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.runs/synth_1/mux2x1_wrapper.vds
+# Journal file: F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mux2x1_wrapper.tcl -notrace

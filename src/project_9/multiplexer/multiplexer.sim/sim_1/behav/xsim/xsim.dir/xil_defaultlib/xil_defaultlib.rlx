@@ -1,0 +1,14 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_2/sim/mux2x1_andgate_0_2.v,1555346438,verilog,,F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_3/sim/mux2x1_andgate_0_3.v,,mux2x1_andgate_0_2,,,,,,,,
+F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_3/sim/mux2x1_andgate_0_3.v,1555346438,verilog,,F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.srcs/sim_1/new/sim_mux2x1.v,,mux2x1_andgate_0_3,,,,,,,,
+F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_notgate_0_0/sim/mux2x1_notgate_0_0.v,1555343620,verilog,,F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/sim/mux2x1.v,,mux2x1_notgate_0_0,,,,,,,,
+F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_orgate_0_0/sim/mux2x1_orgate_0_0.v,1555346139,verilog,,F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ipshared/09df/andgate.v,,mux2x1_orgate_0_0,,,,,,,,
+F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ipshared/0952/notgate.v,1555343620,verilog,,F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_notgate_0_0/sim/mux2x1_notgate_0_0.v,,notgate,,,,,,,,
+F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ipshared/09df/andgate.v,1555346438,verilog,,F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_andgate_0_2/sim/mux2x1_andgate_0_2.v,,andgate,,,,,,,,
+F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ipshared/ceda/orgate.v,1555346139,verilog,,F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ip/mux2x1_orgate_0_0/sim/mux2x1_orgate_0_0.v,,orgate,,,,,,,,
+F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/sim/mux2x1.v,1555346438,verilog,,F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.ip_user_files/bd/mux2x1/ipshared/ceda/orgate.v,,mux2x1,,,,,,,,
+F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.srcs/sim_1/new/sim_mux2x1.v,1555346542,verilog,,,,sim_mux2x1,,,,,,,,

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Apr 16 00:40:51 2019
+# Process ID: 18288
+# Current directory: F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.sim/sim_1/behav/xsim/xsim.dir/sim_mux2x1_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source F:/Github/Computer_Organization/src/project_9/multiplexer/multiplexer.sim/sim_1/behav/xsim/xsim.dir/sim_mux2x1_behav/webtalk/xsim_webtalk.tcl -notrace
