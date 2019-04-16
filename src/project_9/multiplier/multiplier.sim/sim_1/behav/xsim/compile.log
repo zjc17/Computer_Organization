@@ -1,6 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_9/multiplier/multiplier.srcs/sources_1/new/mulu.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mulu
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_9/multiplier/multiplier.srcs/sim_1/new/sim_mulu.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sim_mulu
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_9/multiplier/multiplier.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_9/multiplier/multiplier.srcs/sources_1/new/mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_9/multiplier/multiplier.srcs/sim_1/new/sim_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_mul
