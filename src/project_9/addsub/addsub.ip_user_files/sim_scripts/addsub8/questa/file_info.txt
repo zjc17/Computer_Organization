@@ -1,0 +1,4 @@
+addsub.v,verilog,xil_defaultlib,../../../bd/addsub8/ipshared/6861/sources_1/new/addsub.v,
+addsub8_addsub_0_0.v,verilog,xil_defaultlib,../../../bd/addsub8/ip/addsub8_addsub_0_0/sim/addsub8_addsub_0_0.v,
+addsub8.v,verilog,xil_defaultlib,../../../bd/addsub8/sim/addsub8.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
