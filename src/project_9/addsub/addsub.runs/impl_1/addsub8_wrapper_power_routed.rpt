@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Tue Apr 16 11:45:06 2019
+| Date             : Sun Apr 21 10:40:51 2019
 | Host             : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
 | Command          : report_power -file addsub8_wrapper_power_routed.rpt -pb addsub8_wrapper_power_summary_routed.pb -rpx addsub8_wrapper_power_routed.rpx
 | Design           : addsub8_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 23.759 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 23.868 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 23.460                           |
-| Device Static (W)        | 0.299                            |
+| Dynamic (W)              | 23.566                           |
+| Device Static (W)        | 0.301                            |
 | Effective TJA (C/W)      | 2.7                              |
-| Max Ambient (C)          | 21.4                             |
-| Junction Temperature (C) | 88.6                             |
+| Max Ambient (C)          | 21.1                             |
+| Junction Temperature (C) | 88.9                             |
 | Confidence Level         | Low                              |
 | Setting File             | ---                              |
 | Simulation Activity File | ---                              |
@@ -52,14 +52,14 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.159 |       40 |       --- |             --- |
-|   LUT as Logic |     0.136 |       27 |     63400 |            0.04 |
+| Slice Logic    |     0.161 |       40 |       --- |             --- |
+|   LUT as Logic |     0.138 |       27 |     63400 |            0.04 |
 |   CARRY4       |     0.023 |        6 |     15850 |            0.04 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.649 |       54 |       --- |             --- |
-| I/O            |    22.651 |       29 |       285 |           10.18 |
-| Static Power   |     0.299 |          |           |                 |
-| Total          |    23.759 |          |           |                 |
+| Signals        |     0.642 |       54 |       --- |             --- |
+| I/O            |    22.763 |       29 |       285 |           10.18 |
+| Static Power   |     0.301 |          |           |                 |
+| Total          |    23.868 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,9 +69,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.052 |       0.877 |      0.175 |
-| Vccaux    |       1.800 |     0.867 |       0.828 |      0.039 |
-| Vcco33    |       3.300 |     6.396 |       6.392 |      0.004 |
+| Vccint    |       1.000 |     1.048 |       0.872 |      0.177 |
+| Vccaux    |       1.800 |     0.871 |       0.832 |      0.039 |
+| Vcco33    |       3.300 |     6.428 |       6.424 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -136,10 +136,10 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| addsub8_wrapper |    23.460 |
-|   addsub8_i     |     0.728 |
-|     addsub_0    |     0.728 |
-|       inst      |     0.728 |
+| addsub8_wrapper |    23.566 |
+|   addsub8_i     |     0.723 |
+|     addsub_0    |     0.723 |
+|       inst      |     0.723 |
 +-----------------+-----------+
 
 

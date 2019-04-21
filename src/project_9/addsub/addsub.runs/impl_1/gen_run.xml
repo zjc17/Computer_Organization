@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1555386223">
-  <File Type="OPT-HWDEF" Name="addsub8_wrapper.hwdef"/>
-  <File Type="PA-DCP" Name="addsub8_wrapper.dcp"/>
-  <File Type="OPT-DCP" Name="addsub8_wrapper_opt.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1555814352">
+  <File Type="PWROPT-DCP" Name="addsub8_wrapper_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="addsub8_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="addsub8_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="addsub8_wrapper_power_summary_routed.pb"/>
@@ -10,9 +8,10 @@
   <File Type="BG-DRC" Name="addsub8_wrapper.drc"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="addsub8_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="addsub8_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="addsub8_wrapper.hwdef"/>
+  <File Type="OPT-DCP" Name="addsub8_wrapper_opt.dcp"/>
   <File Type="OPT-DRC" Name="addsub8_wrapper_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="addsub8_wrapper_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="addsub8_wrapper_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="addsub8_wrapper_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="addsub8_wrapper_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="addsub8_wrapper_placed.dcp"/>
@@ -88,16 +87,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/addsub.srcs/component.xml">
-      <FileInfo SFType="IPXACT">
-        <Attr Name="ImportPath" Val="$PSRCDIR/component.xml"/>
-        <Attr Name="ImportTime" Val="1555384527"/>
-      </FileInfo>
+    <File Path="$PSRCDIR/component.xml">
+      <FileInfo SFType="IPXACT"/>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="addsub8_wrapper"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -114,9 +109,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

@@ -27,7 +27,10 @@ set_property webtalk.parent_dir F:/Github/Computer_Organization/src/project_9/ad
 set_property parent.project_path F:/Github/Computer_Organization/src/project_9/addsub/addsub.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths f:/Github/Computer_Organization/src/IP_Core/CSE_CSE_addsub_1.0 [current_project]
+set_property ip_repo_paths {
+  f:/github/computer_organization/src/project_9/addsub/addsub.srcs
+  f:/Github/Computer_Organization/src/IP_Core/CSE_CSE_addsub_1.0
+} [current_project]
 set_property ip_output_repo f:/Github/Computer_Organization/src/project_9/addsub/addsub.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib F:/Github/Computer_Organization/src/project_9/addsub/addsub.srcs/sources_1/bd/addsub8/hdl/addsub8_wrapper.v

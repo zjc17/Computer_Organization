@@ -66,7 +66,6 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param xicom.use_bs_reader 1
   open_checkpoint addsub8_wrapper_routed.dcp
   set_property webtalk.parent_dir F:/Github/Computer_Organization/src/project_9/addsub/addsub.cache/wt [current_project]
   catch { write_mem_info -force addsub8_wrapper.mmi }

@@ -39,12 +39,12 @@ module addsub #(parameter WIDTH=8) ( //指定数据宽度参数， 缺省值是 8
             sum = a + in;
             {cf, sum} = a + in;
             cf = ~cf;
-            ovf = ~a[WIDTH-1] & b[WIDTH-1]& sum[WIDTH-1] | a[WIDTH-1] & ~b[WIDTH-1]& ~sum[WIDTH-1];
+            ovf = (~a[WIDTH-1] & b[WIDTH-1]& sum[WIDTH-1]) | (a[WIDTH-1] & ~b[WIDTH-1]& ~sum[WIDTH-1]);
             end
         else
             begin
             {cf, sum} = a + b;
-            ovf = ~(a[WIDTH-1] ^ b[WIDTH-1]) & cf;
+            ovf = (~a[WIDTH-1] & ~b[WIDTH-1] & sum[WIDTH-1]) | (a[WIDTH-1] & b[WIDTH-1] & ~sum[WIDTH-1]);
             end
         // 判断符号位与是否为0
         sf = sum[WIDTH-1];

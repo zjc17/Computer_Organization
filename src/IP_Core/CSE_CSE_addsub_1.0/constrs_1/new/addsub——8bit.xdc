@@ -55,4 +55,5 @@ set_property IOSTANDARD LVCMOS33 [get_ports ovf]
 set_property IOSTANDARD LVCMOS33 [get_ports sf]
 set_property IOSTANDARD LVCMOS33 [get_ports sub]
 set_property IOSTANDARD LVCMOS33 [get_ports zf]
-set_property PACKAGE_PIN C22 [get_ports cf]
+set_property PACKAGE_PIN G22 [get_ports cf]
+
