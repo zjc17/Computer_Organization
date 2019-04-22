@@ -1,0 +1,43 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+START: a =  16, b =  4, Remainder = 0000000000000, Divisor = 000000000000, Quotient = 00000000, diff = xxxxxxxxxxxxx
+a =  16, b =  4, Remainder = 0000000010000, Divisor = 001000000000, Quotient = 00000000, diff = 1110000010000
+a =  16, b =  4, Remainder = 0000000010000, Divisor = 000100000000, Quotient = 00000000, diff = 1111000010000
+a =  16, b =  4, Remainder = 0000000010000, Divisor = 000010000000, Quotient = 00000000, diff = 1111100010000
+a =  16, b =  4, Remainder = 0000000010000, Divisor = 000001000000, Quotient = 00000000, diff = 1111110010000
+a =  16, b =  4, Remainder = 0000000010000, Divisor = 000000100000, Quotient = 00000000, diff = 1111111010000
+a =  16, b =  4, Remainder = 0000000010000, Divisor = 000000010000, Quotient = 00000000, diff = 1111111110000
+a =  16, b =  4, Remainder = 0000000000000, Divisor = 000000001000, Quotient = 00000001, diff = 0000000000000
+a =  16, b =  4, Remainder = 0000000000000, Divisor = 000000000100, Quotient = 00000010, diff = 1111111111000
+a =  16, b =  4, Remainder = 0000000000000, Divisor = 000000000010, Quotient = 00000100, diff = 1111111111100
+START: a =  24, b = 11, Remainder = 0000000000000, Divisor = 000000000010, Quotient = 00000100, diff = 1111111111100
+a =  24, b = 11, Remainder = 0000000011000, Divisor = 010110000000, Quotient = 00000000, diff = 1010100011000
+a =  24, b = 11, Remainder = 0000000011000, Divisor = 001011000000, Quotient = 00000000, diff = 1101010011000
+a =  24, b = 11, Remainder = 0000000011000, Divisor = 000101100000, Quotient = 00000000, diff = 1110101011000
+a =  24, b = 11, Remainder = 0000000011000, Divisor = 000010110000, Quotient = 00000000, diff = 1111010111000
+a =  24, b = 11, Remainder = 0000000011000, Divisor = 000001011000, Quotient = 00000000, diff = 1111101101000
+a =  24, b = 11, Remainder = 0000000011000, Divisor = 000000101100, Quotient = 00000000, diff = 1111111000000
+a =  24, b = 11, Remainder = 0000000011000, Divisor = 000000010110, Quotient = 00000000, diff = 1111111101100
+a =  24, b = 11, Remainder = 0000000000010, Divisor = 000000001011, Quotient = 00000001, diff = 0000000000010
+a =  24, b = 11, Remainder = 0000000000010, Divisor = 000000000101, Quotient = 00000010, diff = 1111111110111
+START: a =   6, b =  5, Remainder = 0000000000010, Divisor = 000000000101, Quotient = 00000010, diff = 1111111110111
+a =   6, b =  5, Remainder = 0000000000110, Divisor = 001010000000, Quotient = 00000000, diff = 1101100000110
+a =   6, b =  5, Remainder = 0000000000110, Divisor = 000101000000, Quotient = 00000000, diff = 1110110000110
+a =   6, b =  5, Remainder = 0000000000110, Divisor = 000010100000, Quotient = 00000000, diff = 1111011000110
+a =   6, b =  5, Remainder = 0000000000110, Divisor = 000001010000, Quotient = 00000000, diff = 1111101100110
+a =   6, b =  5, Remainder = 0000000000110, Divisor = 000000101000, Quotient = 00000000, diff = 1111110110110
+a =   6, b =  5, Remainder = 0000000000110, Divisor = 000000010100, Quotient = 00000000, diff = 1111111011110
+a =   6, b =  5, Remainder = 0000000000110, Divisor = 000000001010, Quotient = 00000000, diff = 1111111110010
+a =   6, b =  5, Remainder = 0000000000110, Divisor = 000000000101, Quotient = 00000000, diff = 1111111111100
+a =   6, b =  5, Remainder = 0000000000001, Divisor = 000000000010, Quotient = 00000001, diff = 0000000000001
+START: a =   6, b =  0, Remainder = 0000000000001, Divisor = 000000000010, Quotient = 00000001, diff = 0000000000001
+a =   6, b =  0, Remainder = 0000000000110, Divisor = 000000000000, Quotient = 00000001, diff = 0000000000110
+a =   6, b =  0, Remainder = 0000000000110, Divisor = 000000000000, Quotient = 00000011, diff = 0000000000110
+a =   6, b =  0, Remainder = 0000000000110, Divisor = 000000000000, Quotient = 00000111, diff = 0000000000110
+a =   6, b =  0, Remainder = 0000000000110, Divisor = 000000000000, Quotient = 00001111, diff = 0000000000110
+a =   6, b =  0, Remainder = 0000000000110, Divisor = 000000000000, Quotient = 00011111, diff = 0000000000110
+a =   6, b =  0, Remainder = 0000000000110, Divisor = 000000000000, Quotient = 00111111, diff = 0000000000110
+a =   6, b =  0, Remainder = 0000000000110, Divisor = 000000000000, Quotient = 01111111, diff = 0000000000110
+a =   6, b =  0, Remainder = 0000000000110, Divisor = 000000000000, Quotient = 11111111, diff = 0000000000110
+a =   6, b =  0, Remainder = 0000000000110, Divisor = 000000000000, Quotient = 11111111, diff = 0000000000110
+$finish called at time : 290 ns : File "F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sim_1/new/sim_divu.v" Line 48
