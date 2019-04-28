@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1555391478">
-  <File Type="PA-TCL" Name="mulu.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="mulu_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="mulu_reports.tcl"/>
-  <File Type="RDS-RDS" Name="mulu.vds"/>
-  <File Type="RDS-UTIL" Name="mulu_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="mulu_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="mulu.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="mulu_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="mulu_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1555981793">
+  <File Type="PA-TCL" Name="mulx8_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="mulx8_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="mulx8_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mulx8_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="mulx8_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mulx8_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mulx8_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mulx8_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mulx8_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/mulx8/mulx8.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/mulx8/hdl/mulx8_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mul.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/mulu.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -28,12 +51,19 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="mulu"/>
+      <Option Name="TopModule" Val="mulx8_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/mulx8.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/mulx8.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

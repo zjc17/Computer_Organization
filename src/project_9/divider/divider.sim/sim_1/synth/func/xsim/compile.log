@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_9/divider/divider.sim/sim_1/synth/func/xsim/sim_divux16_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divu
+INFO: [VRFC 10-311] analyzing module divux16
+INFO: [VRFC 10-311] analyzing module divux16_clk_wiz_0_1
+INFO: [VRFC 10-311] analyzing module divux16_clk_wiz_0_1_clk_wiz
+INFO: [VRFC 10-311] analyzing module divux16_divu_0_0
+INFO: [VRFC 10-311] analyzing module divux16_wrapper
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sim_1/new/sim_divux16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_divux16

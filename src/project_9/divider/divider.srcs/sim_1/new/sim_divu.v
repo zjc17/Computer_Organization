@@ -31,7 +31,8 @@ reg resetn = 0;
 wire [7:0] q;
 wire [3:0] r;
 wire busy;
-divu #(8) u(a,b,clk,start,resetn,q,r,busy);
+
+divu u(a,b,clk,start,resetn,q,r,busy);// #(8)
 initial begin
 #50 resetn = 1;
 #5start = 1;

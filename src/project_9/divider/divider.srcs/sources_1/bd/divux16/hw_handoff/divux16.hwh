@@ -1,14 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 22 19:23:23 2019" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 28 19:27:19 2019" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="divux16" PACKAGE="fgg484" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
-    <PORT DIR="I" NAME="start" SIGIS="undef" SIGNAME="External_Ports_start">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="divu_0" PORT="start"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" LEFT="15" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a">
       <CONNECTIONS>
         <CONNECTION INSTANCE="divu_0" PORT="a"/>
@@ -19,29 +14,34 @@
         <CONNECTION INSTANCE="divu_0" PORT="b"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="15" NAME="q" RIGHT="0" SIGIS="undef" SIGNAME="divu_0_q">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="divu_0" PORT="q"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="15" NAME="r" RIGHT="0" SIGIS="undef" SIGNAME="divu_0_r">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="divu_0" PORT="r"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="busy" SIGIS="undef" SIGNAME="divu_0_busy">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="divu_0" PORT="busy"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_in1" SIGIS="clk" SIGNAME="External_Ports_clk_in1">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" NAME="start" SIGIS="undef" SIGNAME="External_Ports_start">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="divu_0" PORT="start"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="I" NAME="resetn" SIGIS="rst" SIGNAME="External_Ports_resetn">
       <CONNECTIONS>
         <CONNECTION INSTANCE="divu_0" PORT="resetn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="r" RIGHT="0" SIGIS="undef" SIGNAME="divu_0_r">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="divu_0" PORT="r"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="q" RIGHT="0" SIGIS="undef" SIGNAME="divu_0_q">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="divu_0" PORT="q"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="busy" SIGIS="undef" SIGNAME="divu_0_busy">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="divu_0" PORT="busy"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -78,7 +78,7 @@
         <PARAMETER NAME="C_USE_CLKOUT2_BAR" VALUE="0"/>
         <PARAMETER NAME="C_USE_CLKOUT3_BAR" VALUE="0"/>
         <PARAMETER NAME="C_USE_CLKOUT4_BAR" VALUE="0"/>
-        <PARAMETER NAME="c_component_name" VALUE="divux16_clk_wiz_0_1"/>
+        <PARAMETER NAME="c_component_name" VALUE="divux16_clk_wiz_0_0"/>
         <PARAMETER NAME="C_PLATFORM" VALUE="UNKNOWN"/>
         <PARAMETER NAME="C_USE_FREQ_SYNTH" VALUE="1"/>
         <PARAMETER NAME="C_USE_PHASE_ALIGNMENT" VALUE="1"/>
@@ -292,7 +292,7 @@
         <PARAMETER NAME="C_CLKFB_STOPPED_PORT" VALUE="clkfb_stopped"/>
         <PARAMETER NAME="C_CLKIN1_JITTER_PS" VALUE="100.0"/>
         <PARAMETER NAME="C_CLKIN2_JITTER_PS" VALUE="100.0"/>
-        <PARAMETER NAME="C_PRIMITIVE" VALUE="PLL"/>
+        <PARAMETER NAME="C_PRIMITIVE" VALUE="MMCM"/>
         <PARAMETER NAME="C_SS_MODE" VALUE="CENTER_HIGH"/>
         <PARAMETER NAME="C_SS_MOD_PERIOD" VALUE="4000"/>
         <PARAMETER NAME="C_SS_MOD_TIME" VALUE="0.004"/>
@@ -361,7 +361,7 @@
         <PARAMETER NAME="C_CLKOUT4_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT5_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT6_ACTUAL_FREQ" VALUE="100.000"/>
-        <PARAMETER NAME="Component_Name" VALUE="divux16_clk_wiz_0_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="divux16_clk_wiz_0_0"/>
         <PARAMETER NAME="USER_CLK_FREQ0" VALUE="100.0"/>
         <PARAMETER NAME="USER_CLK_FREQ1" VALUE="100.0"/>
         <PARAMETER NAME="USER_CLK_FREQ2" VALUE="100.0"/>
@@ -375,7 +375,7 @@
         <PARAMETER NAME="Enable_PLL1" VALUE="false"/>
         <PARAMETER NAME="REF_CLK_FREQ" VALUE="100.0"/>
         <PARAMETER NAME="PRECISION" VALUE="1"/>
-        <PARAMETER NAME="PRIMITIVE" VALUE="PLL"/>
+        <PARAMETER NAME="PRIMITIVE" VALUE="MMCM"/>
         <PARAMETER NAME="PRIMTYPE_SEL" VALUE="mmcm_adv"/>
         <PARAMETER NAME="CLOCK_MGR_TYPE" VALUE="auto"/>
         <PARAMETER NAME="USE_FREQ_SYNTH" VALUE="true"/>
@@ -509,7 +509,7 @@
         <PARAMETER NAME="MMCM_NOTES" VALUE="None"/>
         <PARAMETER NAME="MMCM_DIVCLK_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="MMCM_BANDWIDTH" VALUE="OPTIMIZED"/>
-        <PARAMETER NAME="MMCM_CLKFBOUT_MULT_F" VALUE="9"/>
+        <PARAMETER NAME="MMCM_CLKFBOUT_MULT_F" VALUE="9.000"/>
         <PARAMETER NAME="MMCM_CLKFBOUT_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKFBOUT_USE_FINE_PS" VALUE="false"/>
         <PARAMETER NAME="MMCM_CLKIN1_PERIOD" VALUE="10.000"/>
@@ -520,7 +520,7 @@
         <PARAMETER NAME="MMCM_REF_JITTER1" VALUE="0.010"/>
         <PARAMETER NAME="MMCM_REF_JITTER2" VALUE="0.010"/>
         <PARAMETER NAME="MMCM_STARTUP_WAIT" VALUE="false"/>
-        <PARAMETER NAME="MMCM_CLKOUT0_DIVIDE_F" VALUE="9"/>
+        <PARAMETER NAME="MMCM_CLKOUT0_DIVIDE_F" VALUE="9.000"/>
         <PARAMETER NAME="MMCM_CLKOUT0_DUTY_CYCLE" VALUE="0.500"/>
         <PARAMETER NAME="MMCM_CLKOUT0_PHASE" VALUE="50.000"/>
         <PARAMETER NAME="MMCM_CLKOUT0_USE_FINE_PS" VALUE="false"/>
@@ -636,7 +636,7 @@
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="WIDTH" VALUE="16"/>
-        <PARAMETER NAME="Component_Name" VALUE="divux16_divu_0_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="divux16_divu_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -670,7 +670,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="q"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="r" RIGHT="0" SIGIS="undef" SIGNAME="divu_0_r">
+        <PORT DIR="O" LEFT="7" NAME="r" RIGHT="0" SIGIS="undef" SIGNAME="divu_0_r">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="r"/>
           </CONNECTIONS>

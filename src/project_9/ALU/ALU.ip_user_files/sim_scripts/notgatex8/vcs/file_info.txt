@@ -1,0 +1,4 @@
+notgate.v,verilog,xil_defaultlib,../../../bd/notgatex8/ipshared/0952/notgate.v,
+notgatex8_notgate_0_0.v,verilog,xil_defaultlib,../../../bd/notgatex8/ip/notgatex8_notgate_0_0/sim/notgatex8_notgate_0_0.v,
+notgatex8.v,verilog,xil_defaultlib,../../../bd/notgatex8/sim/notgatex8.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

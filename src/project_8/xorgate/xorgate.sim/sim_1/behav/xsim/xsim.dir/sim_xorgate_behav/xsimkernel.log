@@ -1,0 +1,7 @@
+Running: xsim.dir/sim_xorgate_behav/xsimk.exe -simmode gui -wdb sim_xorgate_behav.wdb -simrunnum 0 -socket 14174
+Design successfully loaded
+Design Loading Memory Usage: 6128 KB (Peak: 6128 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 6724 KB (Peak: 6724 KB)
+Simulation CPU Usage: 31 ms

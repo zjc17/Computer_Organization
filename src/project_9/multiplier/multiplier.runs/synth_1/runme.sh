@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log mulu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mulu.tcl
+EAStep vivado -log mulx8_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mulx8_wrapper.tcl

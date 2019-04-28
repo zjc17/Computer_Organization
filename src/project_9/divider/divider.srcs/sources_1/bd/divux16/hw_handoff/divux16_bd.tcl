@@ -165,29 +165,20 @@ proc create_root_design { parentCell } {
    CONFIG.FREQ_HZ {100000000} \
  ] $clk_in1
   set q [ create_bd_port -dir O -from 15 -to 0 q ]
-  set r [ create_bd_port -dir O -from 15 -to 0 r ]
+  set r [ create_bd_port -dir O -from 7 -to 0 r ]
   set resetn [ create_bd_port -dir I -type rst resetn ]
   set start [ create_bd_port -dir I start ]
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_0 ]
   set_property -dict [ list \
-   CONFIG.CLKOUT1_DRIVES {BUFG} \
    CONFIG.CLKOUT1_JITTER {137.681} \
    CONFIG.CLKOUT1_PHASE_ERROR {105.461} \
    CONFIG.CLKOUT1_REQUESTED_PHASE {50.000} \
-   CONFIG.CLKOUT2_DRIVES {BUFG} \
-   CONFIG.CLKOUT3_DRIVES {BUFG} \
-   CONFIG.CLKOUT4_DRIVES {BUFG} \
-   CONFIG.CLKOUT5_DRIVES {BUFG} \
-   CONFIG.CLKOUT6_DRIVES {BUFG} \
-   CONFIG.CLKOUT7_DRIVES {BUFG} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {9} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {9.000} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {9.000} \
    CONFIG.MMCM_CLKOUT0_PHASE {50.000} \
-   CONFIG.MMCM_COMPENSATION {ZHOLD} \
    CONFIG.MMCM_DIVCLK_DIVIDE {1} \
-   CONFIG.PRIMITIVE {PLL} \
    CONFIG.USE_LOCKED {false} \
    CONFIG.USE_RESET {false} \
  ] $clk_wiz_0

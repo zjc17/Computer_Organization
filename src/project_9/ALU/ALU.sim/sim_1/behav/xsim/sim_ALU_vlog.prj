@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ALU.ip_user_files/bd/notgatex8/ipshared/0952/notgate.v" \
+"../../../../ALU.ip_user_files/bd/notgatex8/ip/notgatex8_notgate_0_0/sim/notgatex8_notgate_0_0.v" \
+"../../../../ALU.ip_user_files/bd/notgatex8/sim/notgatex8.v" \
+"../../../../ALU.ip_user_files/bd/xorgatex8/ipshared/2d80/sources_1/new/xorgate.v" \
+"../../../../ALU.ip_user_files/bd/xorgatex8/ip/xorgatex8_xorgate_0_0/sim/xorgatex8_xorgate_0_0.v" \
+"../../../../ALU.ip_user_files/bd/xorgatex8/sim/xorgatex8.v" \
+"../../../../ALU.ip_user_files/bd/andgatex8/ipshared/09df/andgate.v" \
+"../../../../ALU.ip_user_files/bd/andgatex8/ip/andgatex8_andgate_0_0/sim/andgatex8_andgate_0_0.v" \
+"../../../../ALU.ip_user_files/bd/andgatex8/sim/andgatex8.v" \
+"../../../../ALU.ip_user_files/bd/orgatex8/ipshared/ceda/orgate.v" \
+"../../../../ALU.ip_user_files/bd/orgatex8/ip/orgatex8_orgate_0_0/sim/orgatex8_orgate_0_0.v" \
+"../../../../ALU.ip_user_files/bd/orgatex8/sim/orgatex8.v" \
+"../../../../ALU.ip_user_files/bd/addsubx8/ipshared/79aa/sources_1/new/addsub.v" \
+"../../../../ALU.ip_user_files/bd/addsubx8/ip/addsubx8_addsub_0_0/sim/addsubx8_addsub_0_0.v" \
+"../../../../ALU.ip_user_files/bd/addsubx8/sim/addsubx8.v" \
+"../../../../ALU.srcs/sources_1/new/ALUx8.v" \
+"../../../../ALU.srcs/sources_1/bd/addsubx8/hdl/addsubx8_wrapper.v" \
+"../../../../ALU.srcs/sources_1/bd/andgatex8/hdl/andgatex8_wrapper.v" \
+"../../../../ALU.srcs/sources_1/bd/notgatex8/hdl/notgatex8_wrapper.v" \
+"../../../../ALU.srcs/sources_1/bd/orgatex8/hdl/orgatex8_wrapper.v" \
+"../../../../ALU.srcs/sources_1/bd/xorgatex8/hdl/xorgatex8_wrapper.v" \
+"../../../../ALU.srcs/sim_1/new/sim_ALU.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

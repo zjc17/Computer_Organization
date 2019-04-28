@@ -1,0 +1,4 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance sim_divux16.u.divux16_i.clk_wiz_0.inst.plle2_adv_inst are not same.
+$finish called at time : 290 ns : File "F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sim_1/new/sim_divux16.v" Line 47

@@ -1,10 +1,2 @@
 Vivado Simulator 2017.4
 Time resolution is 1 ps
-A =          9
-         9 *         12 =                  108
-sign = 0
-4294967294 *         12 = 18446744073709551592
-A =          2
-sign = 1
-4294967294 * 4294967294 =                    4
-sign = 0

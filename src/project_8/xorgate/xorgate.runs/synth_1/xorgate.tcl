@@ -16,7 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {HDL-1065} -limit 10000
+set_param general.maxThreads 8
 create_project -in_memory -part xc7a100tfgg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -26,6 +26,10 @@ set_property webtalk.parent_dir F:/Github/Computer_Organization/src/project_8/xo
 set_property parent.project_path F:/Github/Computer_Organization/src/project_8/xorgate/xorgate.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths {
+  f:/Github/Computer_Organization/src/project_8/xorgate/xorgate.srcs
+  f:/Github/Computer_Organization/src/project_8/xorgate/xorgate.srcs/sources_1/new
+} [current_project]
 set_property ip_output_repo f:/Github/Computer_Organization/src/project_8/xorgate/xorgate.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib F:/Github/Computer_Organization/src/project_8/xorgate/xorgate.srcs/sources_1/new/xorgate.v

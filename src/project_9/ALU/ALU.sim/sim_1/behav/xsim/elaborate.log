@@ -1,0 +1,39 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto a0ce018a5dd7469b8068a7b794959a49 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_ALU_behav xil_defaultlib.sim_ALU xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port c [F:/Github/Computer_Organization/src/project_9/ALU/ALU.ip_user_files/bd/andgatex8/ip/andgatex8_andgate_0_0/sim/andgatex8_andgate_0_0.v:72]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port d [F:/Github/Computer_Organization/src/project_9/ALU/ALU.ip_user_files/bd/andgatex8/ip/andgatex8_andgate_0_0/sim/andgatex8_andgate_0_0.v:73]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port e [F:/Github/Computer_Organization/src/project_9/ALU/ALU.ip_user_files/bd/andgatex8/ip/andgatex8_andgate_0_0/sim/andgatex8_andgate_0_0.v:74]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port f [F:/Github/Computer_Organization/src/project_9/ALU/ALU.ip_user_files/bd/andgatex8/ip/andgatex8_andgate_0_0/sim/andgatex8_andgate_0_0.v:75]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port g [F:/Github/Computer_Organization/src/project_9/ALU/ALU.ip_user_files/bd/andgatex8/ip/andgatex8_andgate_0_0/sim/andgatex8_andgate_0_0.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port h [F:/Github/Computer_Organization/src/project_9/ALU/ALU.ip_user_files/bd/andgatex8/ip/andgatex8_andgate_0_0/sim/andgatex8_andgate_0_0.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.addsub
+Compiling module xil_defaultlib.addsubx8_addsub_0_0
+Compiling module xil_defaultlib.addsubx8
+Compiling module xil_defaultlib.addsubx8_wrapper
+Compiling module xil_defaultlib.orgate
+Compiling module xil_defaultlib.orgatex8_orgate_0_0
+Compiling module xil_defaultlib.orgatex8
+Compiling module xil_defaultlib.orgatex8_wrapper
+Compiling module xil_defaultlib.andgate
+Compiling module xil_defaultlib.andgatex8_andgate_0_0
+Compiling module xil_defaultlib.andgatex8
+Compiling module xil_defaultlib.andgatex8_wrapper
+Compiling module xil_defaultlib.xorgate
+Compiling module xil_defaultlib.xorgatex8_xorgate_0_0
+Compiling module xil_defaultlib.xorgatex8
+Compiling module xil_defaultlib.xorgatex8_wrapper
+Compiling module xil_defaultlib.notgate
+Compiling module xil_defaultlib.notgatex8_notgate_0_0
+Compiling module xil_defaultlib.notgatex8
+Compiling module xil_defaultlib.notgatex8_wrapper
+Compiling module xil_defaultlib.ALUx8
+Compiling module xil_defaultlib.sim_ALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_ALU_behav

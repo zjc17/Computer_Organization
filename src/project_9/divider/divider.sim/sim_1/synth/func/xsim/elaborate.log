@@ -1,0 +1,34 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 7d720bcda0904d9d8b68b440c2ae2d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot sim_divux16_func_synth xil_defaultlib.sim_divux16 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1...
+Compiling module xil_defaultlib.divux16_clk_wiz_0_1_clk_wiz
+Compiling module xil_defaultlib.divux16_clk_wiz_0_1
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.divu
+Compiling module xil_defaultlib.divux16_divu_0_0
+Compiling module xil_defaultlib.divux16
+Compiling module xil_defaultlib.divux16_wrapper
+Compiling module xil_defaultlib.sim_divux16
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_divux16_func_synth

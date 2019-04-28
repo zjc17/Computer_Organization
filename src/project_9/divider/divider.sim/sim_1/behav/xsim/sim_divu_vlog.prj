@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../divider.srcs/sources_1/bd/divux16/ipshared/4868" \
+verilog xil_defaultlib  --include "../../../../divider.srcs/sources_1/bd/divx16/ipshared/4868" --include "../../../../divider.srcs/sources_1/bd/divux16/ipshared/4868" \
 "../../../../divider.srcs/sources_1/new/divu.v" \
 "../../../../divider.srcs/sim_1/new/sim_divu.v" \
 

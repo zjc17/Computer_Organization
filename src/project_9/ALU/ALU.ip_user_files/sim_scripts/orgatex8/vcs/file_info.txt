@@ -1,0 +1,4 @@
+orgate.v,verilog,xil_defaultlib,../../../bd/orgatex8/ipshared/ceda/orgate.v,
+orgatex8_orgate_0_0.v,verilog,xil_defaultlib,../../../bd/orgatex8/ip/orgatex8_orgate_0_0/sim/orgatex8_orgate_0_0.v,
+orgatex8.v,verilog,xil_defaultlib,../../../bd/orgatex8/sim/orgatex8.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

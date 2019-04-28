@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 28 20:50:13 2019" VIVADOVERSION="2017.4">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="addsubx8" PACKAGE="fgg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="7" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="addsub_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="addsub_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sub" SIGIS="undef" SIGNAME="External_Ports_sub">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="addsub_0" PORT="sub"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="sum" RIGHT="0" SIGIS="undef" SIGNAME="addsub_0_sum">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="addsub_0" PORT="sum"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="cf" SIGIS="undef" SIGNAME="addsub_0_cf">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="addsub_0" PORT="cf"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ovf" SIGIS="undef" SIGNAME="addsub_0_ovf">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="addsub_0" PORT="ovf"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sf" SIGIS="undef" SIGNAME="addsub_0_sf">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="addsub_0" PORT="sf"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="zf" SIGIS="undef" SIGNAME="addsub_0_zf">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="addsub_0" PORT="zf"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/addsub_0" HWVERSION="1.0" INSTANCE="addsub_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="addsub" VLNV="CSE:CSE:addsub:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="WIDTH" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="addsubx8_addsub_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sub" SIGIS="undef" SIGNAME="External_Ports_sub">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sub"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="sum" RIGHT="0" SIGIS="undef" SIGNAME="addsub_0_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cf" SIGIS="undef" SIGNAME="addsub_0_cf">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cf"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ovf" SIGIS="undef" SIGNAME="addsub_0_ovf">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ovf"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sf" SIGIS="undef" SIGNAME="addsub_0_sf">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sf"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="zf" SIGIS="undef" SIGNAME="addsub_0_zf">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="zf"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Apr 23 09:12:41 2019
+# Process ID: 4448
+# Current directory: F:/Github/Computer_Organization/src/project_9/multiplier/multiplier.runs/impl_1
+# Command line: vivado.exe -log mulx8_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mulx8_wrapper.tcl -notrace
+# Log file: F:/Github/Computer_Organization/src/project_9/multiplier/multiplier.runs/impl_1/mulx8_wrapper.vdi
+# Journal file: F:/Github/Computer_Organization/src/project_9/multiplier/multiplier.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source mulx8_wrapper.tcl -notrace
