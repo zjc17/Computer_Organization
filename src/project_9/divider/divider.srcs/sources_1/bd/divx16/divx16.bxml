@@ -2,21 +2,21 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="divx16" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1555992193"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1555992193"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1555992193"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1555992193"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1556537901"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1556537901"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1556537901"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1556537901"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip\divx16_div_0_0\divx16_div_0_0.xci" Type="IP">
-        <Instance HierarchyPath="div_0"/>
+      <File Name="ip\divx16_clk_wiz_0\divx16_clk_wiz_0.xci" Type="IP">
+        <Instance HierarchyPath="clk_wiz"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\divx16_clk_wiz_0_0\divx16_clk_wiz_0_0.xci" Type="IP">
-        <Instance HierarchyPath="clk_wiz_0"/>
+      <File Name="ip\divx16_div_0_3\divx16_div_0_3.xci" Type="IP">
+        <Instance HierarchyPath="div_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

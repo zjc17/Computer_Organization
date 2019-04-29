@@ -169,19 +169,19 @@ proc create_root_design { parentCell } {
   set resetn [ create_bd_port -dir I -type rst resetn ]
   set start [ create_bd_port -dir I start ]
 
-  # Create instance: clk_wiz_0, and set properties
-  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_0 ]
+  # Create instance: clk_wiz, and set properties
+  set clk_wiz [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz ]
   set_property -dict [ list \
    CONFIG.CLKOUT1_JITTER {137.681} \
    CONFIG.CLKOUT1_PHASE_ERROR {105.461} \
-   CONFIG.CLKOUT1_REQUESTED_PHASE {50.000} \
+   CONFIG.CLKOUT1_REQUESTED_PHASE {50.0} \
    CONFIG.MMCM_CLKFBOUT_MULT_F {9.000} \
    CONFIG.MMCM_CLKOUT0_DIVIDE_F {9.000} \
    CONFIG.MMCM_CLKOUT0_PHASE {50.000} \
    CONFIG.MMCM_DIVCLK_DIVIDE {1} \
    CONFIG.USE_LOCKED {false} \
    CONFIG.USE_RESET {false} \
- ] $clk_wiz_0
+ ] $clk_wiz
 
   # Create instance: div_0, and set properties
   set div_0 [ create_bd_cell -type ip -vlnv CSE:CSE:div:1.0 div_0 ]
@@ -192,8 +192,8 @@ proc create_root_design { parentCell } {
   # Create port connections
   connect_bd_net -net a_1 [get_bd_ports a] [get_bd_pins div_0/a]
   connect_bd_net -net b_1 [get_bd_ports b] [get_bd_pins div_0/b]
-  connect_bd_net -net clk_in1_1 [get_bd_ports clk_in1] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins div_0/clk]
+  connect_bd_net -net clk_in1_1 [get_bd_ports clk_in1] [get_bd_pins clk_wiz/clk_in1]
+  connect_bd_net -net clk_wiz_clk_out1 [get_bd_pins clk_wiz/clk_out1] [get_bd_pins div_0/clk]
   connect_bd_net -net div_0_busy [get_bd_ports busy] [get_bd_pins div_0/busy]
   connect_bd_net -net div_0_q [get_bd_ports q] [get_bd_pins div_0/q]
   connect_bd_net -net div_0_r [get_bd_ports r] [get_bd_pins div_0/r]

@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
-EAStep vivado -log divux16_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source divux16_wrapper.tcl -notrace
+/bin/touch .write_bitstream.begin.rst
+EAStep vivado -log divx16_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source divx16_wrapper.tcl -notrace
 
 

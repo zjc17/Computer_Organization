@@ -35,20 +35,28 @@ module divu #(parameter WIDTH = 8)(
     reg [WIDTH+WIDTH/2-1:0] Divisor;
     reg [WIDTH+WIDTH/2:0] Remainder;
     reg [WIDTH+WIDTH/2:0] diff;
-    always@(posedge clk or negedge resetn)
-    begin
-        if (~resetn | (~(|b) & start))//| !(start & ~busy &(|b))
-            begin
+    always@(posedge clk or negedge resetn) begin
+        if (~resetn | (~(|b) & start)) begin // resetn 或 除数 为0
             Quotient = 0;
             Divisor = 0;
             Remainder = 0;
             busy = 0;
-            end
-        else
-        begin 
-            if (~busy & start & (|b)) 
+            q = Quotient;
+            r = Remainder[WIDTH/2-1:0];
+        end else begin 
+            if (cnt > 0) begin      // cnt > 0 正在计算
+                cnt = cnt - 1;
+                diff = Remainder - Divisor;
+                Quotient = Quotient << 1;
+                if (!diff[WIDTH+WIDTH/2])
                 begin
-                busy <= 1;
+                    Remainder = diff;
+                    Quotient[0] = 1'b1;
+                end
+                Divisor = Divisor >> 1;
+            end
+            else if (~busy & start) begin // busy = 0 且 start 有效, 进行初始化
+                busy = 1;
                 Remainder[WIDTH+WIDTH/2] = 0;
                 Remainder[WIDTH+WIDTH/2-1:WIDTH/2] = 0;
                 Remainder[WIDTH-1:0] = a;
@@ -56,31 +64,12 @@ module divu #(parameter WIDTH = 8)(
                 Divisor[WIDTH-1:0] = 0;
                 Quotient = 0;
                 diff = 0;
-                $display("START: a = %d, b = %d, Remainder = %b, Divisor = %b, Quotient = %b, diff = %b", a, b, Remainder, Divisor, Quotient, diff);
-                end
-            if (busy)
-                begin
-                    for (cnt = 0; cnt <= WIDTH; cnt = cnt + 1)
-                    begin
-                        diff = Remainder - Divisor;
-                        Quotient = Quotient << 1;
-                        if (!diff[WIDTH+WIDTH/2])
-                        begin
-                            Remainder = diff;
-                            Quotient[0] = 1'b1;
-                        end
-                        Divisor = Divisor >> 1;
-                        $display("a = %d, b = %d, Remainder = %b, Divisor = %b, Quotient = %b, diff = %b", a, b, Remainder, Divisor, Quotient, diff);
-                    end
-                    busy = 0;
-//                    q <= Quotient;
-//                    r <= Remainder[WIDTH-1:0];
-                end
+                cnt = WIDTH + 1;
+            end else if (cnt == 0) begin // cnt = 0 计算结束
+                busy = 0; 
+                q = Quotient;
+                r = Remainder[WIDTH/2-1:0];
+            end 
         end
-        q = Quotient;
-        r = Remainder[WIDTH-1:0];
-//            busy <= 0;
-//            q <= Quotient;
-//            r <= Remainder[WIDTH-1:0];
     end
 endmodule

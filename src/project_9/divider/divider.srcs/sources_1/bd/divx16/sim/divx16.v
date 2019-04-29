@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-//Date        : Tue Apr 23 12:03:11 2019
+//Date        : Mon Apr 29 19:38:19 2019
 //Host        : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
 //Command     : generate_target divx16.bd
 //Design      : divx16
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "divx16,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=divx16,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=2,numReposBlks=2,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=Global}" *) (* HW_HANDOFF = "divx16.hwdef" *) 
+(* CORE_GENERATION_INFO = "divx16,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=divx16,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=2,numReposBlks=2,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_clkrst_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "divx16.hwdef" *) 
 module divx16
    (a,
     b,
@@ -31,7 +31,7 @@ module divx16
   wire [15:0]a_1;
   wire [7:0]b_1;
   wire clk_in1_1;
-  wire clk_wiz_0_clk_out1;
+  wire clk_wiz_clk_out1;
   wire div_0_busy;
   wire [15:0]div_0_q;
   wire [7:0]div_0_r;
@@ -46,14 +46,14 @@ module divx16
   assign r[7:0] = div_0_r;
   assign resetn_1 = resetn;
   assign start_1 = start;
-  divx16_clk_wiz_0_0 clk_wiz_0
+  divx16_clk_wiz_0 clk_wiz
        (.clk_in1(clk_in1_1),
-        .clk_out1(clk_wiz_0_clk_out1));
-  divx16_div_0_0 div_0
+        .clk_out1(clk_wiz_clk_out1));
+  divx16_div_0_3 div_0
        (.a(a_1),
         .b(b_1),
         .busy(div_0_busy),
-        .clk(clk_wiz_0_clk_out1),
+        .clk(clk_wiz_clk_out1),
         .q(div_0_q),
         .r(div_0_r),
         .resetn(resetn_1),

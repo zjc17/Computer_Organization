@@ -30,13 +30,13 @@ reg resetn = 0;
 wire [15:0] q;
 wire [7:0] r;
 wire busy;
-divux16_wrapper u(a,b,busy, clk,q,r,resetn,start);// #(8)
+divux16_wrapper u(a,b,busy, clk,q,r,~resetn,start);// #(8)
 initial begin
 #10 resetn = 1;
 #200 start = 1;
 #10 start = 0;
 #100 begin a = 8'd24;b = 4'd11;end
-#10start = 1;
+#10 start = 1;
 #10 start = 0;
 #100 begin a = 8'd6;b = 4'd5;end
 #10 start = 1;

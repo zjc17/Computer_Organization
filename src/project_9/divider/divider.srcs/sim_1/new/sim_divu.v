@@ -40,6 +40,8 @@ initial begin
 #50 begin a = 8'd24;b = 4'd11;end
 #5start = 1;
 #5 start = 0;
+#5start = 1;
+#5 start = 0;
 #50 begin a = 8'd6;b = 4'd5;end
 #5start = 1;
 #5 start = 0;

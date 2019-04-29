@@ -2,11 +2,11 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun Apr 28 19:26:59 2019
-# Process ID: 15376
+# Start of session at: Mon Apr 29 19:40:35 2019
+# Process ID: 25952
 # Current directory: F:/Github/Computer_Organization/src/project_9/divider/divider.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source F:/Github/Computer_Organization/src/project_9/divider/divider.sim/sim_1/behav/xsim/xsim.dir/divx16_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source F:/Github/Computer_Organization/src/project_9/divider/divider.sim/sim_1/behav/xsim/xsim.dir/sim_divux16_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: F:/Github/Computer_Organization/src/project_9/divider/divider.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: F:/Github/Computer_Organization/src/project_9/divider/divider.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source F:/Github/Computer_Organization/src/project_9/divider/divider.sim/sim_1/behav/xsim/xsim.dir/divx16_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+source F:/Github/Computer_Organization/src/project_9/divider/divider.sim/sim_1/behav/xsim/xsim.dir/sim_divux16_behav/webtalk/xsim_webtalk.tcl -notrace

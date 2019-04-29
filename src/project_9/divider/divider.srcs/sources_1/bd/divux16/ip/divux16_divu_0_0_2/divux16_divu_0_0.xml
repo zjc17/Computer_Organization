@@ -98,7 +98,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Apr 28 11:27:19 UTC 2019</spirit:value>
+            <spirit:value>Mon Apr 29 10:20:21 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -117,7 +117,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Apr 28 11:27:19 UTC 2019</spirit:value>
+            <spirit:value>Mon Apr 29 10:20:39 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -135,7 +135,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Apr 28 11:27:19 UTC 2019</spirit:value>
+            <spirit:value>Mon Apr 29 10:20:21 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -154,7 +154,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Apr 28 11:27:19 UTC 2019</spirit:value>
+            <spirit:value>Mon Apr 29 10:20:39 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -295,12 +295,6 @@
   </spirit:model>
   <spirit:choices>
     <spirit:choice>
-      <spirit:name>choice_list_8112d406</spirit:name>
-      <spirit:enumeration>8</spirit:enumeration>
-      <spirit:enumeration>16</spirit:enumeration>
-      <spirit:enumeration>32</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_list_9d8b0d81</spirit:name>
       <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
       <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
@@ -316,7 +310,7 @@
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4809/sources_1/new/divu.v</spirit:name>
+        <spirit:name>../../ipshared/be3a/sources_1/new/divu.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -331,7 +325,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/4809/sources_1/new/divu.v</spirit:name>
+        <spirit:name>../../ipshared/be3a/sources_1/new/divu.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -349,7 +343,7 @@
     <spirit:parameter>
       <spirit:name>WIDTH</spirit:name>
       <spirit:displayName>Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WIDTH" spirit:choiceRef="choice_list_8112d406">16</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WIDTH">16</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -373,10 +367,10 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="2118e6b9"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3840663b"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="23f601ca"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="a6a34414"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="3746c371"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="d44fccb3"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="178b4d26"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

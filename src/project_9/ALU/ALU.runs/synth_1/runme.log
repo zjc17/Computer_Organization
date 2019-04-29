@@ -1,0 +1,403 @@
+
+*** Running vivado
+    with args -log ALUx8.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALUx8.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source ALUx8.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Github/Computer_Organization/src/IP_Core/CSE_CSE_xorgate_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Github/Computer_Organization/src/IP_Core/CSE_CSE_orgate_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Github/Computer_Organization/src/IP_Core/CSE_CSE_notgate_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Github/Computer_Organization/src/IP_Core/CSE_CSE_addsub_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Github/Computer_Organization/src/IP_Core/CSE_CSE_andgate_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+Command: synth_design -top ALUx8 -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5268 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 340.387 ; gain = 98.273
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALUx8' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/new/ALUx8.v:23]
+INFO: [Synth 8-638] synthesizing module 'addsubx8_wrapper' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/hdl/addsubx8_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'addsubx8' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/synth/addsubx8.v:13]
+INFO: [Synth 8-638] synthesizing module 'addsubx8_addsub_0_0' [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/synth/addsubx8_addsub_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'addsub' [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ipshared/79aa/sources_1/new/addsub.v:23]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'addsub' (1#1) [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ipshared/79aa/sources_1/new/addsub.v:23]
+INFO: [Synth 8-256] done synthesizing module 'addsubx8_addsub_0_0' (2#1) [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/synth/addsubx8_addsub_0_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'addsubx8' (3#1) [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/synth/addsubx8.v:13]
+INFO: [Synth 8-256] done synthesizing module 'addsubx8_wrapper' (4#1) [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/hdl/addsubx8_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'orgatex8_wrapper' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/orgatex8/hdl/orgatex8_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'orgatex8' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/orgatex8/synth/orgatex8.v:13]
+INFO: [Synth 8-638] synthesizing module 'orgatex8_orgate_0_0' [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/orgatex8/ip/orgatex8_orgate_0_0/synth/orgatex8_orgate_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'orgate' [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/orgatex8/ipshared/ceda/orgate.v:23]
+	Parameter Port_Num bound to: 2 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'orgate' (5#1) [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/orgatex8/ipshared/ceda/orgate.v:23]
+INFO: [Synth 8-256] done synthesizing module 'orgatex8_orgate_0_0' (6#1) [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/orgatex8/ip/orgatex8_orgate_0_0/synth/orgatex8_orgate_0_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'orgatex8' (7#1) [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/orgatex8/synth/orgatex8.v:13]
+INFO: [Synth 8-256] done synthesizing module 'orgatex8_wrapper' (8#1) [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/orgatex8/hdl/orgatex8_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'andgatex8_wrapper' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/andgatex8/hdl/andgatex8_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'andgatex8' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/andgatex8/synth/andgatex8.v:13]
+INFO: [Synth 8-638] synthesizing module 'andgatex8_andgate_0_0' [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/andgatex8/ip/andgatex8_andgate_0_0/synth/andgatex8_andgate_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'andgate' [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/andgatex8/ipshared/09df/andgate.v:23]
+	Parameter Port_Num bound to: 2 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'andgate' (9#1) [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/andgatex8/ipshared/09df/andgate.v:23]
+INFO: [Synth 8-256] done synthesizing module 'andgatex8_andgate_0_0' (10#1) [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/andgatex8/ip/andgatex8_andgate_0_0/synth/andgatex8_andgate_0_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'andgatex8' (11#1) [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/andgatex8/synth/andgatex8.v:13]
+INFO: [Synth 8-256] done synthesizing module 'andgatex8_wrapper' (12#1) [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/andgatex8/hdl/andgatex8_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'xorgatex8_wrapper' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/xorgatex8/hdl/xorgatex8_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'xorgatex8' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/xorgatex8/synth/xorgatex8.v:13]
+INFO: [Synth 8-638] synthesizing module 'xorgatex8_xorgate_0_0' [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/xorgatex8/ip/xorgatex8_xorgate_0_0/synth/xorgatex8_xorgate_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'xorgate' [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/xorgatex8/ipshared/2d80/sources_1/new/xorgate.v:23]
+	Parameter Port_Num bound to: 2 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xorgate' (13#1) [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/xorgatex8/ipshared/2d80/sources_1/new/xorgate.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xorgatex8_xorgate_0_0' (14#1) [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/xorgatex8/ip/xorgatex8_xorgate_0_0/synth/xorgatex8_xorgate_0_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'xorgatex8' (15#1) [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/xorgatex8/synth/xorgatex8.v:13]
+INFO: [Synth 8-256] done synthesizing module 'xorgatex8_wrapper' (16#1) [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/xorgatex8/hdl/xorgatex8_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'notgatex8_wrapper' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/notgatex8/hdl/notgatex8_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'notgatex8' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/notgatex8/synth/notgatex8.v:13]
+INFO: [Synth 8-638] synthesizing module 'notgatex8_notgate_0_0' [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/notgatex8/ip/notgatex8_notgate_0_0/synth/notgatex8_notgate_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'notgate' [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/notgatex8/ipshared/0952/notgate.v:23]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'notgate' (17#1) [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/notgatex8/ipshared/0952/notgate.v:23]
+INFO: [Synth 8-256] done synthesizing module 'notgatex8_notgate_0_0' (18#1) [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/notgatex8/ip/notgatex8_notgate_0_0/synth/notgatex8_notgate_0_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'notgatex8' (19#1) [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/notgatex8/synth/notgatex8.v:13]
+INFO: [Synth 8-256] done synthesizing module 'notgatex8_wrapper' (20#1) [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/notgatex8/hdl/notgatex8_wrapper.v:12]
+INFO: [Synth 8-256] done synthesizing module 'ALUx8' (21#1) [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/new/ALUx8.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 392.125 ; gain = 150.012
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 392.125 ; gain = 150.012
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc] for cell 'u_1/addsubx8_i/addsub_0/inst'
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:34]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:35]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:36]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:37]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:38]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:39]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:40]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:42]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:43]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:44]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:45]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:46]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:47]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc:48]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc] for cell 'u_1/addsubx8_i/addsub_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ip/addsubx8_addsub_0_0/constrs_1/new/addsub！！8bit.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ALUx8_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ALUx8_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/Github/Computer_Organization/src/project_9/ALU/ALU.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/Github/Computer_Organization/src/project_9/ALU/ALU.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Github/Computer_Organization/src/project_9/ALU/ALU.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ALUx8_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ALUx8_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 736.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 736.488 ; gain = 494.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 736.488 ; gain = 494.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_1/addsubx8_i/addsub_0/inst. (constraint file  F:/Github/Computer_Organization/src/project_9/ALU/ALU.runs/synth_1/dont_touch.xdc, line 43).
+Applied set_property DONT_TOUCH = true for u_1/addsubx8_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_1/addsubx8_i/addsub_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_2/orgatex8_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_2/orgatex8_i/orgate_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_3/andgatex8_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_3/andgatex8_i/andgate_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_4/xorgatex8_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_4/xorgatex8_i/xorgate_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_5/notgatex8_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_5/notgatex8_i/notgate_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 736.488 ; gain = 494.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ipshared/79aa/sources_1/new/addsub.v:38]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ipshared/79aa/sources_1/new/addsub.v:38]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ipshared/79aa/sources_1/new/addsub.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'res_reg' [F:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/new/ALUx8.v:46]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 736.488 ; gain = 494.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   8 Input      8 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ALUx8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 2     
+Module addsub 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module xorgate 
+Detailed RTL Component Info : 
++---XORs : 
+	   8 Input      8 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [f:/Github/Computer_Organization/src/project_9/ALU/ALU.srcs/sources_1/bd/addsubx8/ipshared/79aa/sources_1/new/addsub.v:38]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 736.488 ; gain = 494.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 736.488 ; gain = 494.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 736.488 ; gain = 494.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 745.547 ; gain = 503.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 745.547 ; gain = 503.434
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 745.547 ; gain = 503.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 745.547 ; gain = 503.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 745.547 ; gain = 503.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 745.547 ; gain = 503.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 745.547 ; gain = 503.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     6|
+|2     |LUT1   |     8|
+|3     |LUT2   |    36|
+|4     |LUT3   |    13|
+|5     |LUT4   |     8|
+|6     |LUT5   |    15|
+|7     |LUT6   |    33|
+|8     |LD     |     8|
+|9     |IBUF   |    20|
+|10    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+----------------------+------+
+|      |Instance        |Module                |Cells |
++------+----------------+----------------------+------+
+|1     |top             |                      |   159|
+|2     |  u_1           |addsubx8_wrapper      |    44|
+|3     |    addsubx8_i  |addsubx8              |    38|
+|4     |      addsub_0  |addsubx8_addsub_0_0   |    38|
+|5     |        inst    |addsub                |    38|
+|6     |  u_2           |orgatex8_wrapper      |     8|
+|7     |    orgatex8_i  |orgatex8              |     8|
+|8     |      orgate_0  |orgatex8_orgate_0_0   |     8|
+|9     |        inst    |orgate                |     8|
+|10    |  u_3           |andgatex8_wrapper     |    20|
+|11    |    andgatex8_i |andgatex8             |     8|
+|12    |      andgate_0 |andgatex8_andgate_0_0 |     8|
+|13    |  u_4           |xorgatex8_wrapper     |     8|
+|14    |    xorgatex8_i |xorgatex8             |     8|
+|15    |      xorgate_0 |xorgatex8_xorgate_0_0 |     8|
+|16    |        inst    |xorgate               |     8|
+|17    |  u_5           |notgatex8_wrapper     |     8|
+|18    |    notgatex8_i |notgatex8             |     8|
+|19    |      notgate_0 |notgatex8_notgate_0_0 |     8|
+|20    |        inst    |notgate               |     8|
++------+----------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 745.547 ; gain = 503.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 745.547 ; gain = 159.070
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 745.547 ; gain = 503.434
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 1 Warnings, 14 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 752.645 ; gain = 522.000
+INFO: [Common 17-1381] The checkpoint 'F:/Github/Computer_Organization/src/project_9/ALU/ALU.runs/synth_1/ALUx8.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ALUx8_utilization_synth.rpt -pb ALUx8_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 752.645 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 10:33:22 2019...

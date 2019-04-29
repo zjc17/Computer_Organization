@@ -1,6 +1,237 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 29 19:29:26 2019
+| Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'divx16_div_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of divx16_div_0_0 (CSE:CSE:div:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 29 18:20:37 2019
+| Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'divux16_divu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of divux16_divu_0_0 (CSE:CSE:divu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 29 18:20:17 2019
+| Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'divux16_divu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of divux16_divu_0_0 (CSE:CSE:divu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 29 18:12:02 2019
+| Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'divux16_divu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of divux16_divu_0_0 (CSE:CSE:divu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 29 18:10:59 2019
+| Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'divux16_divu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of divux16_divu_0_0 (CSE:CSE:divu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 29 18:01:53 2019
+| Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'divux16_divu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of divux16_divu_0_0 (CSE:CSE:divu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 29 18:01:34 2019
+| Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'divux16_divu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of divux16_divu_0_0 (CSE:CSE:divu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 29 17:48:11 2019
+| Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'divux16_divu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of divux16_divu_0_0 (CSE:CSE:divu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 29 17:47:21 2019
+| Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'divux16_divu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of divux16_divu_0_0 (CSE:CSE:divu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 29 16:54:58 2019
+| Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'divux16_divu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of divux16_divu_0_0 (CSE:CSE:divu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 29 16:53:50 2019
+| Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'divux16_divu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of divux16_divu_0_0 (CSE:CSE:divu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
 | Date         : Sun Apr 28 19:27:12 2019
 | Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

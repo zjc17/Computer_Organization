@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr 23 12:03:13 2019" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 29 19:38:21 2019" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="divx16" PACKAGE="fgg484" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_in1" SIGIS="clk" SIGNAME="External_Ports_clk_in1">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
+        <CONNECTION INSTANCE="clk_wiz" PORT="clk_in1"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="15" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a">
@@ -17,16 +17,6 @@
     <PORT DIR="I" LEFT="7" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b">
       <CONNECTIONS>
         <CONNECTION INSTANCE="div_0" PORT="b"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="start" SIGIS="undef" SIGNAME="External_Ports_start">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="div_0" PORT="start"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="resetn" SIGIS="rst" SIGNAME="External_Ports_resetn">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="div_0" PORT="resetn"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="15" NAME="q" RIGHT="0" SIGIS="undef" SIGNAME="div_0_q">
@@ -44,12 +34,22 @@
         <CONNECTION INSTANCE="div_0" PORT="busy"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" NAME="start" SIGIS="undef" SIGNAME="External_Ports_start">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="div_0" PORT="start"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="resetn" SIGIS="rst" SIGNAME="External_Ports_resetn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="div_0" PORT="resetn"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE FULLNAME="/clk_wiz_0" HWVERSION="5.4" INSTANCE="clk_wiz_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:5.4">
+    <MODULE FULLNAME="/clk_wiz" HWVERSION="5.4" INSTANCE="clk_wiz" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:5.4">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clk_wiz;v=v5_4;d=pg065-clk-wiz.pdf"/>
       </DOCUMENTS>
@@ -78,7 +78,7 @@
         <PARAMETER NAME="C_USE_CLKOUT2_BAR" VALUE="0"/>
         <PARAMETER NAME="C_USE_CLKOUT3_BAR" VALUE="0"/>
         <PARAMETER NAME="C_USE_CLKOUT4_BAR" VALUE="0"/>
-        <PARAMETER NAME="c_component_name" VALUE="divx16_clk_wiz_0_0"/>
+        <PARAMETER NAME="c_component_name" VALUE="divx16_clk_wiz_0"/>
         <PARAMETER NAME="C_PLATFORM" VALUE="UNKNOWN"/>
         <PARAMETER NAME="C_USE_FREQ_SYNTH" VALUE="1"/>
         <PARAMETER NAME="C_USE_PHASE_ALIGNMENT" VALUE="1"/>
@@ -140,7 +140,7 @@
         <PARAMETER NAME="C_CLKOUT5_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT6_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT7_REQUESTED_OUT_FREQ" VALUE="100.000"/>
-        <PARAMETER NAME="C_CLKOUT1_REQUESTED_PHASE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT1_REQUESTED_PHASE" VALUE="50.0"/>
         <PARAMETER NAME="C_CLKOUT2_REQUESTED_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="C_CLKOUT3_REQUESTED_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="C_CLKOUT4_REQUESTED_PHASE" VALUE="0.000"/>
@@ -361,7 +361,7 @@
         <PARAMETER NAME="C_CLKOUT4_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT5_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT6_ACTUAL_FREQ" VALUE="100.000"/>
-        <PARAMETER NAME="Component_Name" VALUE="divx16_clk_wiz_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="divx16_clk_wiz_0"/>
         <PARAMETER NAME="USER_CLK_FREQ0" VALUE="100.0"/>
         <PARAMETER NAME="USER_CLK_FREQ1" VALUE="100.0"/>
         <PARAMETER NAME="USER_CLK_FREQ2" VALUE="100.0"/>
@@ -438,7 +438,7 @@
         <PARAMETER NAME="PSINCDEC_PORT" VALUE="psincdec"/>
         <PARAMETER NAME="PSDONE_PORT" VALUE="psdone"/>
         <PARAMETER NAME="CLKOUT1_REQUESTED_OUT_FREQ" VALUE="100.000"/>
-        <PARAMETER NAME="CLKOUT1_REQUESTED_PHASE" VALUE="50.000"/>
+        <PARAMETER NAME="CLKOUT1_REQUESTED_PHASE" VALUE="50.0"/>
         <PARAMETER NAME="CLKOUT1_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="CLKOUT2_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="CLKOUT2_REQUESTED_PHASE" VALUE="0.000"/>
@@ -624,7 +624,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="clk_in1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="div_0" PORT="clk"/>
           </CONNECTIONS>
@@ -636,7 +636,7 @@
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="WIDTH" VALUE="16"/>
-        <PARAMETER NAME="Component_Name" VALUE="divx16_div_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="divx16_div_0_3"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -650,9 +650,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="b"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+            <CONNECTION INSTANCE="clk_wiz" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="start" SIGIS="undef" SIGNAME="External_Ports_start">

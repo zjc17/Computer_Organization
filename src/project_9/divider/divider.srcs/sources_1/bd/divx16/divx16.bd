@@ -126,18 +126,6 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>start</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>resetn</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
           <spirit:name>q</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
@@ -163,6 +151,18 @@
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
         </spirit:port>
+        <spirit:port>
+          <spirit:name>start</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>resetn</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
       </spirit:ports>
     </spirit:model>
   </spirit:component>
@@ -174,19 +174,11 @@
     <spirit:version>1.00.a</spirit:version>
     <spirit:componentInstances>
       <spirit:componentInstance>
-        <spirit:instanceName>div_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="CSE" spirit:name="div" spirit:vendor="CSE" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">divx16_div_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="WIDTH">16</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>clk_wiz_0</spirit:instanceName>
+        <spirit:instanceName>clk_wiz</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="clk_wiz" spirit:vendor="xilinx.com" spirit:version="5.4"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">divx16_clk_wiz_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_PHASE">50.000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">divx16_clk_wiz_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_PHASE">50.0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="USE_LOCKED">false</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="USE_RESET">false</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MMCM_DIVCLK_DIVIDE">1</spirit:configurableElementValue>
@@ -197,17 +189,25 @@
           <spirit:configurableElementValue spirit:referenceId="CLKOUT1_PHASE_ERROR">105.461</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>div_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="CSE" spirit:name="div" spirit:vendor="CSE" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">divx16_div_0_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="WIDTH">16</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
-        <spirit:name>clk_wiz_0_clk_out1</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_out1"/>
-        <spirit:internalPortReference spirit:componentRef="div_0" spirit:portRef="clk"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>clk_in1_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="clk_in1"/>
-        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz" spirit:portRef="clk_in1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_wiz_clk_out1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz" spirit:portRef="clk_out1"/>
+        <spirit:internalPortReference spirit:componentRef="div_0" spirit:portRef="clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>a_1</spirit:name>
@@ -218,16 +218,6 @@
         <spirit:name>b_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="b"/>
         <spirit:internalPortReference spirit:componentRef="div_0" spirit:portRef="b"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>start_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="start"/>
-        <spirit:internalPortReference spirit:componentRef="div_0" spirit:portRef="start"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>resetn_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="resetn"/>
-        <spirit:internalPortReference spirit:componentRef="div_0" spirit:portRef="resetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>div_0_q</spirit:name>
@@ -243,6 +233,16 @@
         <spirit:name>div_0_busy</spirit:name>
         <spirit:internalPortReference spirit:componentRef="div_0" spirit:portRef="busy"/>
         <spirit:externalPortReference spirit:portRef="busy"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>start_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="start"/>
+        <spirit:internalPortReference spirit:componentRef="div_0" spirit:portRef="start"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>resetn_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="resetn"/>
+        <spirit:internalPortReference spirit:componentRef="div_0" spirit:portRef="resetn"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>
