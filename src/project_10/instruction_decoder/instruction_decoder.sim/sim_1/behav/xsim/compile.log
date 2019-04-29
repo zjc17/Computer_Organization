@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+WARNING: [VRFC 10-1315] redeclaration of ansi port register is not allowed [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:39]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.sim/idcode32_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idcode32_sim

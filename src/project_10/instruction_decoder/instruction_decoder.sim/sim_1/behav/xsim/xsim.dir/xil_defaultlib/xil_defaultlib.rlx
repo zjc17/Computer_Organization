@@ -1,0 +1,7 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.sim/idcode32_sim.v,1556553177,systemVerilog,,,,idcode32_sim,,xil_defaultlib,D:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,xil_defaultlib,,,,,,
+F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v,1556555488,systemVerilog,,F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.sim/idcode32_sim.v,,decoder,,xil_defaultlib,D:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
