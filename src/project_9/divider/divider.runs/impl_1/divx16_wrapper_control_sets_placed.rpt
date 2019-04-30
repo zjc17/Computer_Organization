@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Apr 29 19:42:20 2019
+| Date         : Tue Apr 30 09:46:42 2019
 | Host         : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file divx16_wrapper_control_sets_placed.rpt
 | Design       : divx16_wrapper
@@ -45,17 +45,17 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------+-------------------------------------------+---------------------------+------------------+----------------+
-|           Clock Signal          |               Enable Signal               |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
-+---------------------------------+-------------------------------------------+---------------------------+------------------+----------------+
-|  divx16_i/clk_wiz/inst/clk_out1 |                                           |                           |                1 |              1 |
-|  divx16_i/clk_wiz/inst/clk_out1 |                                           | divx16_i/div_0/inst/clear |                1 |              1 |
-|  divx16_i/clk_wiz/inst/clk_out1 | divx16_i/div_0/inst/Quotient[15]_i_1_n_0  | divx16_i/div_0/inst/clear |                3 |             16 |
-|  divx16_i/clk_wiz/inst/clk_out1 | divx16_i/div_0/inst/Divisor               | divx16_i/div_0/inst/clear |                6 |             24 |
-|  divx16_i/clk_wiz/inst/clk_out1 | divx16_i/div_0/inst/q[15]_i_1_n_0         | divx16_i/div_0/inst/clear |                7 |             24 |
-|  divx16_i/clk_wiz/inst/clk_out1 | divx16_i/div_0/inst/Remainder[23]_i_1_n_0 | divx16_i/div_0/inst/clear |                6 |             25 |
-|  divx16_i/clk_wiz/inst/clk_out1 | divx16_i/div_0/inst/cnt                   |                           |                8 |             32 |
-+---------------------------------+-------------------------------------------+---------------------------+------------------+----------------+
++---------------------------------+-------------------------------------------+------------------+------------------+----------------+
+|           Clock Signal          |               Enable Signal               | Set/Reset Signal | Slice Load Count | Bel Load Count |
++---------------------------------+-------------------------------------------+------------------+------------------+----------------+
+|  divx16_i/clk_wiz/inst/clk_out1 |                                           |                  |                1 |              1 |
+|  divx16_i/clk_wiz/inst/clk_out1 |                                           | resetn_IBUF      |                1 |              1 |
+|  divx16_i/clk_wiz/inst/clk_out1 | divx16_i/div_0/inst/Quotient[15]_i_1_n_0  | resetn_IBUF      |                3 |             16 |
+|  divx16_i/clk_wiz/inst/clk_out1 | divx16_i/div_0/inst/Divisor               | resetn_IBUF      |                6 |             24 |
+|  divx16_i/clk_wiz/inst/clk_out1 | divx16_i/div_0/inst/q[15]_i_1_n_0         | resetn_IBUF      |                7 |             24 |
+|  divx16_i/clk_wiz/inst/clk_out1 | divx16_i/div_0/inst/Remainder[23]_i_1_n_0 | resetn_IBUF      |                6 |             25 |
+|  divx16_i/clk_wiz/inst/clk_out1 | divx16_i/div_0/inst/cnt                   |                  |                8 |             32 |
++---------------------------------+-------------------------------------------+------------------+------------------+----------------+
 
 
 +--------+-----------------------+

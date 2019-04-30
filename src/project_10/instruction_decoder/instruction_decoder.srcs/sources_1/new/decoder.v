@@ -87,13 +87,15 @@ module decoder(
             if (write_register_1_address != 5'b0_0000) begin  // ±ÜÃâĞ´Èë 0 ºÅ¼Ä´æÆ÷
                 write_register_address = write_register_1_address;
                 $display("time:%3dns, R_type, write_register_address = %d, write_register_1_address = %d, Instruction = %b", $time, write_register_address, write_register_1_address, Instruction);
-            end
+            end else
+                register[0] = 0;
         if (I_type) begin// I-type => rt
             write_register_address = 5'b0_0001;
             if (write_register_2_address != 5'b0_0000) begin // ±ÜÃâĞ´Èë 0 ºÅ¼Ä´æÆ÷
                 write_register_address = write_register_2_address;
                 $display("time:%3dns, I_type, write_register_address = %d, write_register_2_address = %d, Instruction = %b", $time, write_register_address, write_register_2_address, Instruction);
-            end
+            end else
+                  register[0] = 0;
         end
         if (Jal)   // Jal
             write_register_address = 5'd31;

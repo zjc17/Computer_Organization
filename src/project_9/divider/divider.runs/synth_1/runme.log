@@ -1,917 +1,5 @@
 
 *** Running vivado
-    with args -log div.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source div.tcl
-
-
-****** Vivado v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source div.tcl -notrace
-Command: synth_design -top div -part xc7a100tfgg484-1
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
-INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2220 
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 331.047 ; gain = 100.426
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'div' [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:23]
-	Parameter WIDTH bound to: 8 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element diff_reg was removed.  [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:50]
-WARNING: [Synth 8-5788] Register cnt_reg in module div is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:48]
-WARNING: [Synth 8-5788] Register sign_q_reg in module div is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:59]
-INFO: [Synth 8-256] done synthesizing module 'div' (1#1) [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:23]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 382.641 ; gain = 152.020
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 382.641 ; gain = 152.020
----------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a100tfgg484-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc]
-WARNING: [Vivado 12-584] No ports matched 'a[15]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:1]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:1]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[14]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:2]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:2]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[13]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:3]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:3]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[12]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:4]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:4]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[11]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:5]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:5]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[10]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:6]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:6]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[9]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:7]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:7]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[8]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:8]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:8]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[15]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:17]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[14]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:18]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[13]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:19]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:19]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[12]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:20]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[11]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[10]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:22]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[9]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[8]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk_in1'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:33]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk_in1'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:34]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:34]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[7]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:37]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[6]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:38]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[5]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:39]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[4]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:40]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:40]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[7]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:45]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[6]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:46]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:46]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[5]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:47]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[4]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:48]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[15]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:54]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[14]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:55]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:55]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[13]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[12]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:57]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[11]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:58]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:58]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[10]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:59]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[9]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:60]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[8]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:61]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:61]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[15]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:70]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[14]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:71]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:71]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[13]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:72]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[12]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:73]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:73]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[11]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:74]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:74]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[10]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:75]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:75]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[9]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:76]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:76]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[8]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:77]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:77]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[7]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:87]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[6]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:88]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:88]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[5]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:89]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:89]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[4]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:90]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:90]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[7]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:95]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[6]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:96]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:96]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[5]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:97]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:97]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[4]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:98]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:98]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/div_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/div_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Completed Processing XDC Constraints
-
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 728.457 ; gain = 0.000
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 728.457 ; gain = 497.836
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
----------------------------------------------------------------------------------
-Loading part: xc7a100tfgg484-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 728.457 ; gain = 497.836
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 728.457 ; gain = 497.836
----------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "busy" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:48]
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 728.457 ; gain = 497.836
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     13 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 2     
-+---XORs : 
-	   2 Input      1 Bit         XORs := 1     
-+---Registers : 
-	               13 Bit    Registers := 1     
-	               12 Bit    Registers := 1     
-	                8 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input     13 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 4     
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 7     
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Hierarchical Component Statistics 
----------------------------------------------------------------------------------
-Hierarchical RTL Component report 
-Module div 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     13 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 2     
-+---XORs : 
-	   2 Input      1 Bit         XORs := 1     
-+---Registers : 
-	               13 Bit    Registers := 1     
-	               12 Bit    Registers := 1     
-	                8 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input     13 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 4     
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 7     
----------------------------------------------------------------------------------
-Finished RTL Hierarchical Component Statistics
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Part Resource Summary
----------------------------------------------------------------------------------
-Part Resources:
-DSPs: 240 (col length:80)
-BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "busy" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:48]
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 728.457 ; gain = 497.836
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 728.457 ; gain = 497.836
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 728.457 ; gain = 497.836
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 744.590 ; gain = 513.969
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
-INFO: [Synth 8-5365] Flop Remainder_reg[12] is being inverted and renamed to Remainder_reg[12]_inv.
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 744.590 ; gain = 513.969
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 744.590 ; gain = 513.969
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 744.590 ; gain = 513.969
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 744.590 ; gain = 513.969
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 744.590 ; gain = 513.969
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 744.590 ; gain = 513.969
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |    16|
-|3     |LUT1   |     1|
-|4     |LUT2   |    91|
-|5     |LUT3   |    16|
-|6     |LUT4   |    12|
-|7     |LUT5   |    17|
-|8     |LUT6   |     9|
-|9     |FDCE   |    45|
-|10    |FDPE   |     1|
-|11    |FDRE   |    33|
-|12    |IBUF   |    15|
-|13    |OBUF   |    13|
-+------+-------+------+
-
-Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |   270|
-+------+---------+-------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 744.590 ; gain = 513.969
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 744.590 ; gain = 168.152
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 744.590 ; gain = 513.969
-INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-INFO: [Common 17-83] Releasing license: Synthesis
-17 Infos, 55 Warnings, 50 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 748.305 ; gain = 521.453
-INFO: [Common 17-600] The following parameters have non-default value.
-general.maxThreads
-INFO: [Common 17-1381] The checkpoint 'F:/Github/Computer_Organization/src/project_9/divider/divider.runs/synth_1/div.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file div_utilization_synth.rpt -pb div_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 748.305 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 19:22:17 2019...
-
-*** Running vivado
-    with args -log div.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source div.tcl
-
-
-****** Vivado v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source div.tcl -notrace
-Command: synth_design -top div -part xc7a100tfgg484-1
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
-INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 22460 
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 330.902 ; gain = 100.406
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'div' [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:23]
-	Parameter WIDTH bound to: 8 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element diff_reg was removed.  [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:50]
-WARNING: [Synth 8-5788] Register cnt_reg in module div is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:48]
-WARNING: [Synth 8-5788] Register sign_q_reg in module div is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:59]
-INFO: [Synth 8-256] done synthesizing module 'div' (1#1) [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:23]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 382.723 ; gain = 152.227
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 382.723 ; gain = 152.227
----------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a100tfgg484-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc]
-WARNING: [Vivado 12-584] No ports matched 'a[15]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:1]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:1]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[14]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:2]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:2]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[13]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:3]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:3]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[12]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:4]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:4]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[11]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:5]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:5]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[10]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:6]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:6]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[9]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:7]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:7]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[8]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:8]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:8]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[15]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:17]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[14]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:18]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[13]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:19]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:19]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[12]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:20]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[11]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[10]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:22]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[9]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[8]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk_in1'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:33]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk_in1'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:34]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:34]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[7]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:37]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[6]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:38]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[5]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:39]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[4]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:40]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:40]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[7]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:45]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[6]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:46]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:46]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[5]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:47]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[4]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:48]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[15]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:54]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[14]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:55]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:55]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[13]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[12]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:57]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[11]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:58]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:58]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[10]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:59]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[9]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:60]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[8]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:61]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:61]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[15]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:70]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[14]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:71]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:71]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[13]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:72]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[12]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:73]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:73]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[11]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:74]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:74]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[10]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:75]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:75]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[9]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:76]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:76]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'q[8]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:77]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:77]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[7]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:87]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[6]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:88]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:88]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[5]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:89]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:89]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[4]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:90]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:90]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[7]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:95]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[6]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:96]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:96]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[5]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:97]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:97]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'r[4]'. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:98]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc:98]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/constrs_1/new/divux16_.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/div_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/div_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Completed Processing XDC Constraints
-
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 726.684 ; gain = 0.000
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 726.684 ; gain = 496.188
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
----------------------------------------------------------------------------------
-Loading part: xc7a100tfgg484-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 726.684 ; gain = 496.188
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 726.684 ; gain = 496.188
----------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "busy" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:48]
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 726.684 ; gain = 496.188
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     13 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 2     
-+---XORs : 
-	   2 Input      1 Bit         XORs := 1     
-+---Registers : 
-	               13 Bit    Registers := 1     
-	               12 Bit    Registers := 1     
-	                8 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input     13 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 4     
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 7     
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Hierarchical Component Statistics 
----------------------------------------------------------------------------------
-Hierarchical RTL Component report 
-Module div 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     13 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 2     
-+---XORs : 
-	   2 Input      1 Bit         XORs := 1     
-+---Registers : 
-	               13 Bit    Registers := 1     
-	               12 Bit    Registers := 1     
-	                8 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input     13 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 4     
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 7     
----------------------------------------------------------------------------------
-Finished RTL Hierarchical Component Statistics
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Part Resource Summary
----------------------------------------------------------------------------------
-Part Resources:
-DSPs: 240 (col length:80)
-BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "busy" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/new/div.v:48]
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 726.684 ; gain = 496.188
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 726.684 ; gain = 496.188
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 726.684 ; gain = 496.188
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 746.172 ; gain = 515.676
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
-INFO: [Synth 8-5365] Flop Remainder_reg[12] is being inverted and renamed to Remainder_reg[12]_inv.
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 746.172 ; gain = 515.676
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 746.172 ; gain = 515.676
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 746.172 ; gain = 515.676
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 746.172 ; gain = 515.676
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 746.172 ; gain = 515.676
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 746.172 ; gain = 515.676
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |    16|
-|3     |LUT1   |     1|
-|4     |LUT2   |    91|
-|5     |LUT3   |    16|
-|6     |LUT4   |    12|
-|7     |LUT5   |    17|
-|8     |LUT6   |     9|
-|9     |FDCE   |    45|
-|10    |FDPE   |     1|
-|11    |FDRE   |    33|
-|12    |IBUF   |    15|
-|13    |OBUF   |    13|
-+------+-------+------+
-
-Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |   270|
-+------+---------+-------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 746.172 ; gain = 515.676
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 746.172 ; gain = 171.715
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 746.172 ; gain = 515.676
-INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-INFO: [Common 17-83] Releasing license: Synthesis
-17 Infos, 55 Warnings, 50 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 747.949 ; gain = 520.996
-INFO: [Common 17-1381] The checkpoint 'F:/Github/Computer_Organization/src/project_9/divider/divider.runs/synth_1/div.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file div_utilization_synth.rpt -pb div_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 747.949 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 19:33:43 2019...
-
-*** Running vivado
     with args -log divx16_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source divx16_wrapper.tcl
 
 
@@ -929,9 +17,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 25928 
+INFO: Helper process launched with PID 7536 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 341.031 ; gain = 98.102
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 341.102 ; gain = 98.035
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'divx16_wrapper' [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/hdl/divx16_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'divx16' [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/synth/divx16.v:13]
@@ -1009,7 +97,7 @@ INFO: [Synth 8-256] done synthesizing module 'divx16_div_0_3' (7#1) [f:/Github/C
 INFO: [Synth 8-256] done synthesizing module 'divx16' (8#1) [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/synth/divx16.v:13]
 INFO: [Synth 8-256] done synthesizing module 'divx16_wrapper' (9#1) [F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/hdl/divx16_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 393.531 ; gain = 150.602
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 392.848 ; gain = 149.781
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1019,7 +107,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 393.531 ; gain = 150.602
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 392.848 ; gain = 149.781
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1041,6 +129,10 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 WARNING: [Vivado 12-584] No ports matched 'clk_in1'. [f:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/ip/divx16_div_0_3/constrs_1/new/divux16_.xdc:34]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [f:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/ip/divx16_div_0_3/constrs_1/new/divux16_.xdc:34]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/ip/divx16_div_0_3/constrs_1/new/divux16_.xdc:35]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [f:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/ip/divx16_div_0_3/constrs_1/new/divux16_.xdc:36]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
 Finished Parsing XDC File [f:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/ip/divx16_div_0_3/constrs_1/new/divux16_.xdc] for cell 'divx16_i/div_0/inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/ip/divx16_div_0_3/constrs_1/new/divux16_.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/divx16_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/divx16_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -1058,16 +150,16 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 746.695 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 745.375 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 746.695 ; gain = 503.766
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 745.375 ; gain = 502.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 746.695 ; gain = 503.766
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 745.375 ; gain = 502.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1078,12 +170,12 @@ Applied set_property DONT_TOUCH = true for divx16_i. (constraint file  auto gene
 Applied set_property DONT_TOUCH = true for divx16_i/clk_wiz. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for divx16_i/div_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 746.695 ; gain = 503.766
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 745.375 ; gain = 502.309
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "busy" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [f:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/ipshared/ec77/sources_1/new/div.v:48]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 746.695 ; gain = 503.766
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 745.375 ; gain = 502.309
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1158,7 +250,7 @@ Start Cross Boundary and Area Optimization
 INFO: [Synth 8-5545] ROM "busy" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [f:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sources_1/bd/divx16/ipshared/ec77/sources_1/new/div.v:48]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 746.695 ; gain = 503.766
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 745.375 ; gain = 502.309
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1170,13 +262,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 746.695 ; gain = 503.766
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 745.375 ; gain = 502.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 759.988 ; gain = 517.059
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 755.391 ; gain = 512.324
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1188,7 +280,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 761.961 ; gain = 519.031
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 757.000 ; gain = 513.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1213,7 +305,7 @@ INFO: [Synth 8-5365] Flop Remainder_reg[24] is being inverted and renamed to Rem
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 761.961 ; gain = 519.031
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 757.000 ; gain = 513.934
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1226,7 +318,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 761.961 ; gain = 519.031
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 757.000 ; gain = 513.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1238,25 +330,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 761.961 ; gain = 519.031
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 757.000 ; gain = 513.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 761.961 ; gain = 519.031
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 757.000 ; gain = 513.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 761.961 ; gain = 519.031
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 757.000 ; gain = 513.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 761.961 ; gain = 519.031
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 757.000 ; gain = 513.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1274,7 +366,7 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |BUFG       |     2|
 |2     |CARRY4     |    27|
-|3     |LUT1       |    33|
+|3     |LUT1       |    34|
 |4     |LUT2       |   115|
 |5     |LUT3       |    38|
 |6     |LUT4       |    14|
@@ -1292,7 +384,7 @@ Report Instance Areas:
 +------+------------+-------------------------+------+
 |      |Instance    |Module                   |Cells |
 +------+------------+-------------------------+------+
-|1     |top         |                         |   440|
+|1     |top         |                         |   441|
 |2     |  divx16_i  |divx16                   |   389|
 |3     |    clk_wiz |divx16_clk_wiz_0         |     4|
 |4     |      inst  |divx16_clk_wiz_0_clk_wiz |     4|
@@ -1300,11 +392,11 @@ Report Instance Areas:
 |6     |      inst  |div                      |   385|
 +------+------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 761.961 ; gain = 519.031
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 757.000 ; gain = 513.934
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 761.961 ; gain = 165.867
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 761.961 ; gain = 519.031
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 757.000 ; gain = 161.406
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 757.000 ; gain = 513.934
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1314,10 +406,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-42 Infos, 7 Warnings, 2 Critical Warnings and 0 Errors encountered.
+42 Infos, 7 Warnings, 4 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 762.309 ; gain = 530.852
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 757.000 ; gain = 525.406
 INFO: [Common 17-1381] The checkpoint 'F:/Github/Computer_Organization/src/project_9/divider/divider.runs/synth_1/divx16_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file divx16_wrapper_utilization_synth.rpt -pb divx16_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 762.309 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 19:41:39 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 757.000 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 30 09:45:53 2019...

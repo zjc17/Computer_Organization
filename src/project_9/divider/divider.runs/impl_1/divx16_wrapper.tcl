@@ -60,12 +60,13 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param general.maxThreads 8
+  set_param xicom.use_bs_reader 1
   open_checkpoint divx16_wrapper_routed.dcp
   set_property webtalk.parent_dir F:/Github/Computer_Organization/src/project_9/divider/divider.cache/wt [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]

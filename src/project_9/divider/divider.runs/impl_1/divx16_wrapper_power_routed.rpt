@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Mon Apr 29 19:42:56 2019
+| Date             : Tue Apr 30 09:47:20 2019
 | Host             : DESKTOP-RTRUIMN running 64-bit major release  (build 9200)
 | Command          : report_power -file divx16_wrapper_power_routed.rpt -pb divx16_wrapper_power_summary_routed.pb -rpx divx16_wrapper_power_routed.rpx
 | Design           : divx16_wrapper
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |      389 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      184 |     63400 |            0.29 |
+| Slice Logic    |    <0.001 |      388 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      183 |     63400 |            0.29 |
 |   CARRY4       |    <0.001 |       27 |     15850 |            0.17 |
 |   Register     |    <0.001 |      123 |    126800 |            0.10 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |      255 |       --- |             --- |
+| Signals        |    <0.001 |      254 |       --- |             --- |
 | MMCM           |     0.101 |        1 |         6 |           16.67 |
 | I/O            |    <0.001 |       52 |       285 |           18.25 |
 | Static Power   |     0.097 |          |           |                 |

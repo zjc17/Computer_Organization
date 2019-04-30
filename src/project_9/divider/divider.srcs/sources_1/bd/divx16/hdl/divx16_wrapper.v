@@ -43,6 +43,6 @@ module divx16_wrapper
         .clk_in1(clk_in1),
         .q(q),
         .r(r),
-        .resetn(resetn),
+        .resetn(~resetn),
         .start(start));
 endmodule

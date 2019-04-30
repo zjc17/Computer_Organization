@@ -41,6 +41,8 @@ set_property src_info {type:SCOPED_XDC file:2 line:34 export:INPUT save:INPUT re
 set_property IOSTANDARD LVCMOS33 [get_ports clk_in1]
 set_property src_info {type:SCOPED_XDC file:2 line:35 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN P20 [get_ports resetn]
+set_property src_info {type:SCOPED_XDC file:2 line:36 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports resetn]
 set_property src_info {type:SCOPED_XDC file:2 line:37 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U6 [get_ports {b[7]}]
 set_property src_info {type:SCOPED_XDC file:2 line:38 export:INPUT save:INPUT read:READ} [current_design]
