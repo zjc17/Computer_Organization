@@ -1,0 +1,7 @@
+Running: xsim.dir/Ifetc32_behav/xsimk.exe -simmode gui -wdb Ifetc32_behav.wdb -simrunnum 0 -socket 6694
+Design successfully loaded
+Design Loading Memory Usage: 7216 KB (Peak: 7216 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 8132 KB (Peak: 8132 KB)
+Simulation CPU Usage: 124 ms

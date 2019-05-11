@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_11/execute_unit/execute_unit.srcs/sources_1/new/execute_unitx32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module execute_unitx32
-WARNING: [VRFC 10-1315] redeclaration of ansi port ALU_Result is not allowed [F:/Github/Computer_Organization/src/project_11/execute_unit/execute_unit.srcs/sources_1/new/execute_unitx32.v:40]
-WARNING: [VRFC 10-1315] redeclaration of ansi port Sftmd is not allowed [F:/Github/Computer_Organization/src/project_11/execute_unit/execute_unit.srcs/sources_1/new/execute_unitx32.v:48]
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_11/execute_unit/execute_unit.srcs/sim_1/new/exe_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module exe_sim

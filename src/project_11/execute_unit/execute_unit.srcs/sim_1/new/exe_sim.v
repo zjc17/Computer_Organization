@@ -103,7 +103,19 @@ module exe_sim();
                 I_format = 1'b0;
                 PC_plus_4 = 32'h00000018;
             end 
-//       #20 $finish;
+       #20 begin    // SLT
+               Read_data_1 = 32'h00000001;        // r-form rs
+               Read_data_2 = 32'h00000011;        // r-form rt
+               Sign_extend = 32'h00000004;  
+               Function_opcode = 6'b101010;      // SLT 2a
+               ALUOp = 2'b10;
+               Shamt = 5'b00000;
+               Sftmd = 1'b0;
+               ALUSrc = 1'b0;
+               I_format = 1'b0;
+               PC_plus_4 = 32'h00000022;
+           end
+       #20 $finish;
       end
 endmodule
 

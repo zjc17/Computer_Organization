@@ -71,7 +71,7 @@ always @* begin  // 6种移位指令
  
     always @* begin
         if(((ALU_ctl==3'b111) && (Exe_code[3]==1))||((ALU_ctl[2:1]==2'b11) && (I_format==1))) //slti(sub)  处理所有SLT类的问题
-            ALU_Result = Sinput;
+            ALU_Result = Read_data_1 < Read_data_2 ? 1'b1 : 1'b0;
         else if((ALU_ctl==3'b101) && (I_format==1)) // lui: load upper immediate
             ALU_Result[31:0] = {Binput[15:0], {16{1'b0}}};   
         else if(Sftmd==1)   // 移位
