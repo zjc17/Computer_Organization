@@ -47,14 +47,15 @@ module control32_sim(
                     nBranch,Jmp,Jal,I_format,
                     Sftmd,ALUOp);
     initial begin
-        #200     Function_opcode  = 6'b001000;               // JR
-        #200    Opcode = 6'b001000;                         //  ADDI
-        #200    Opcode = 6'b100011;                         //  LW
-        #200    Opcode = 6'b101011;                         //  SW
-        #250    Opcode = 6'b000100;                         //  BEQ
-        #200    Opcode = 6'b000101;                         //  BNE
-        #250    Opcode = 6'b000010;                         //  JMP
-        #200    Opcode = 6'b000011;                         //  JAL
-        #250    begin Opcode = 6'b000000; Function_opcode  = 6'b000010; end;//  SRL
+        #20     Function_opcode  = 6'b001000;               // JR
+        #20    Opcode = 6'b001000;                         //  ADDI
+        #20    Opcode = 6'b100011;                         //  LW
+        #20    Opcode = 6'b101011;                         //  SW
+        #20    Opcode = 6'b000100;                         //  BEQ
+        #20    Opcode = 6'b000101;                         //  BNE
+        #20    Opcode = 6'b000010;                         //  JMP
+        #20    Opcode = 6'b000011;                         //  JAL
+        #20    begin Opcode = 6'b000000; Function_opcode  = 6'b000010; end;//  SRL
+        #20 $finish;
     end         
 endmodule

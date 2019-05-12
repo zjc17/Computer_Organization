@@ -1,7 +1,5 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_12/project_12.srcs/sources_1/ip/prgrom/sim/prgrom.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module prgrom
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_12/project_12.srcs/sources_1/new/ifetc32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ifetc32
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_12/project_12.srcs/sim_1/new/ifetc32_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ifetc32_sim
-WARNING: [VRFC 10-2096] empty statement in sequential block [F:/Github/Computer_Organization/src/project_12/project_12.srcs/sim_1/new/ifetc32_sim.v:49]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_12/project_12.srcs/sources_1/new/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Github/Computer_Organization/src/project_12/project_12.srcs/sim_1/new/control32_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32_sim
+WARNING: [VRFC 10-2096] empty statement in sequential block [F:/Github/Computer_Organization/src/project_12/project_12.srcs/sim_1/new/control32_sim.v:51]

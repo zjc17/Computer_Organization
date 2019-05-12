@@ -15,30 +15,29 @@ module control32(Opcode, Function_opcode, Jrn, RegDST, ALUSrc, MemortoReg, RegWr
     output       Jal;               // 为1表明是Jal指令
     output       I_format;          // 为1表明该指令是除beq，bne，LW，SW之外的其他I-类型指令
     output       Sftmd;             // 为1表明是移位指令
-    output[1:0]  ALUOp;             // 是R-类型或I_format=1时位1为1, beq、bne指令则位0为1
    
     wire Jmp,I_format,Jal,Branch,nBranch;
     wire R_format;        // 为1表示是R-类型指令
     wire Lw;              // 为1表示是lw指令
     wire Sw;              // 为1表示是sw指令
     
-    assign R_format = (Opcode==6'b000000)? 1'b1:1'b0;    	// --00h 
+    assign R_format = (Opcode==6'b0000_00) ? 1'b1:1'b0;    	// --00h 
     assign RegDST = R_format;                               // 说明目标是rd，否则是rt
-    assign I_format = ？？？？？
-    assign Lw = ？？？？？
-    assign Jal = ？？？？？ 
-    assign Jrn = ？？？？？   
-    assign RegWrite = ？？？？？
+    assign I_format = (Opcode[5:3] == 3'b001) ? 1'b1:1'b0;
+    assign Lw = (Opcode == 6'b1000_11);
+    assign Jal = (Opcode == 6'b0000_11); 
+    assign Jrn = (Opcode==6'b0000_00 & Function_opcode == 5'h08);   
+    assign RegWrite = (R_format & ~Jrn | I_format | Opcode == 6'b1000_11 | Opcode == 6'b0000_11);
 
-    assign Sw = ？？？？？
-    assign ALUSrc = ？？？？？
-    assign Branch = ？？？？？
-    assign nBranch = ？？？？？
-    assign Jmp = ？？？？？
+    assign Sw = (Opcode==6'b1010_11);
+    assign ALUSrc = (I_format | Lw | Sw) ? 1'b1: 1'b0;
+    assign Branch = (Opcode == 6'h4) ? 1'b1 : 1'b0;
+    assign nBranch = (Opcode == 6'h5) ? 1'b1 : 1'b0;
+    assign Jmp = (Opcode == 6'h2) ? 1'b1 : 1'b0;
     
-    assign MemWrite = ？？？？？
-    assign MemtoReg = ？？？？？
-    assign Sftmd = ？？？？？
+    assign MemWrite = Sw ? 1'b1: 1'b0;
+    assign MemortoReg = Lw ? 1'b1: 1'b0;
+    assign Sftmd = (R_format & (Function_opcode == 5'h0 | Function_opcode == 5'h2)) ? 1'b1: 1'b0;
   
     assign ALUOp = {(R_format || I_format),(Branch || nBranch)};  // 是R－type或需要立即数作32位扩展的指令1位为1,beq、bne指令则0位为1
 endmodule
