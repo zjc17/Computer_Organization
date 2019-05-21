@@ -15,6 +15,7 @@ module control32(Opcode, Function_opcode, Jrn, RegDST, ALUSrc, MemortoReg, RegWr
     output       Jal;               // 为1表明是Jal指令
     output       I_format;          // 为1表明该指令是除beq，bne，LW，SW之外的其他I-类型指令
     output       Sftmd;             // 为1表明是移位指令
+    output[1:0]  ALUOp;
    
     wire Jmp,I_format,Jal,Branch,nBranch;
     wire R_format;        // 为1表示是R-类型指令
