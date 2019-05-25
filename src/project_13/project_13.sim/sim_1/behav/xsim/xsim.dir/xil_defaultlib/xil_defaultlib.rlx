@@ -2,9 +2,16 @@
 2017.4
 Dec 15 2017
 21:07:18
-F:/Github/Computer_Organization/src/project_13/project_13.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+F:/Github/Computer_Organization/src/project_13/project_13.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,xil_defaultlib,,,,,,
 F:/Github/Computer_Organization/src/project_13/project_13.srcs/sim_1/new/ControlIO32_sim.v,1558361411,verilog,,,,ControlIO32_sim,,,,,,,,
 F:/Github/Computer_Organization/src/project_13/project_13.srcs/sim_1/new/ram_sim.v,1527943918,verilog,,,,ram_sim,,,,,,,,
-F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/ip/RAM/sim/RAM.v,1557802913,verilog,,F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/dmemory32.v,,RAM,,,,,,,,
+F:/Github/Computer_Organization/src/project_13/project_13.srcs/sim_1/new/sim_switches.v,1558775186,verilog,,,,sim_switches,,xil_defaultlib,D:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+F:/Github/Computer_Organization/src/project_13/project_13.srcs/sim_1/new/top_sim.v,1558782169,systemVerilog,,,,top_sim,,xil_defaultlib,D:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/ip/RAM/sim/RAM.v,1557802913,verilog,,F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/dmemory32.v,,RAM,,xil_defaultlib,D:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
 F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/control32.v,1558361677,verilog,,F:/Github/Computer_Organization/src/project_13/project_13.srcs/sim_1/new/ControlIO32_sim.v,,control32,,,,,,,,
-F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/dmemory32.v,1558359352,verilog,,F:/Github/Computer_Organization/src/project_13/project_13.srcs/sim_1/new/ram_sim.v,,dmemory32,,,,,,,,
+F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/dmemory32.v,1558359352,systemVerilog,,F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/ioread.v,,dmemory32,,xil_defaultlib,D:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/ioread.v,1517212940,systemVerilog,,F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/leds.v,,ioread,,xil_defaultlib,D:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/leds.v,1517212940,systemVerilog,,F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/memorio.v,,leds,,xil_defaultlib,D:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/memorio.v,1558362422,systemVerilog,,F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/switchs.v,,memorio,,xil_defaultlib,D:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/switchs.v,1558774830,systemVerilog,,F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/top.v,,switchs,,xil_defaultlib,D:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+F:/Github/Computer_Organization/src/project_13/project_13.srcs/sources_1/new/top.v,1558781921,systemVerilog,,F:/Github/Computer_Organization/src/project_13/project_13.srcs/sim_1/new/top_sim.v,,top,,xil_defaultlib,D:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,

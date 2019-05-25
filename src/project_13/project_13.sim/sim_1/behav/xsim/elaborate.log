@@ -1,13 +1,24 @@
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto e7929770e3ed49d0950eb492fd52a43f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ControlIO32_sim_behav xil_defaultlib.ControlIO32_sim xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto e7929770e3ed49d0950eb492fd52a43f --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.control32
-Compiling module xil_defaultlib.ControlIO32_sim
+Compiling module xil_defaultlib.memorio
+Compiling module xil_defaultlib.switchs
+Compiling module xil_defaultlib.ioread
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_sim
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot ControlIO32_sim_behav
+Built simulation snapshot top_sim_behav

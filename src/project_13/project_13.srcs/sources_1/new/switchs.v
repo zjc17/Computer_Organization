@@ -10,7 +10,7 @@ module switchs(switclk, switrst, switchread, switchcs,switchaddr, switchrdata, s
     output [15:0] switchrdata;	     //  送到CPU的拨码开关值注意数据总线只有16根
     input [23:0] switch_i;		    //  从板上读的24位开关数据
 
-    reg [23:0] switchrdata;
+    reg [15:0] switchrdata;
     always@(negedge switclk or posedge switrst) begin
         if(switrst) begin
             switchrdata <= 0;
