@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat May 25 22:00:00 2019
+# Process ID: 23608
+# Current directory: F:/Github/Computer_Organization/src/project_11/execute_unit/execute_unit.runs/synth_1
+# Command line: vivado.exe -log execute_unitx32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source execute_unitx32.tcl
+# Log file: F:/Github/Computer_Organization/src/project_11/execute_unit/execute_unit.runs/synth_1/execute_unitx32.vds
+# Journal file: F:/Github/Computer_Organization/src/project_11/execute_unit/execute_unit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source execute_unitx32.tcl -notrace

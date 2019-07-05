@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1555981793">
   <File Type="PA-TCL" Name="mulx8_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="mulx8_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="mulx8_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="mulx8_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="mulx8_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="mulx8_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="mulx8_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="mulx8_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="mulx8_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/mulx8/mulx8.bd">
@@ -68,9 +65,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

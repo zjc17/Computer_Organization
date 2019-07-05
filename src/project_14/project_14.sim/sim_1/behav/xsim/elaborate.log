@@ -1,0 +1,33 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 74fea9643d264e8f8e4d8204cc7b9bbf --incr --debug typical --relax --mt 8 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_CPU_behav xil_defaultlib.sim_CPU xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 24 for port led_out [F:/Github/Computer_Organization/src/project_14/project_14.srcs/sim_1/new/sim_CPU.sv:37]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port PC_plus_4 [F:/Github/Computer_Organization/src/project_14/project_14.srcs/sources_1/new/CPU.v:101]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.prgrom
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.execute_unitx32
+Compiling module xil_defaultlib.control32
+Compiling module xil_defaultlib.memorio
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.ioread
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.switchs
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.sim_CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_CPU_behav

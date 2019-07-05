@@ -26,8 +26,6 @@ module top_sim( );
     reg[31:0] caddress = 32'b0; // 输入信号： 内存地址 （读写）
     reg[4:0] RegAddr = 5'b0;    // 输入信号： 寄存器地址 （读写）
     reg[23:0] switch_i = 24'b0; // 输入信号：拨码开关状态
-    reg[1:0] switchaddr = 2'b00;// 输入信号：拨码开关读取地址片段  2'b00: [15:0]   2'b10 [23:16]
-    reg[1:0] ledaddr = 2'b00;
     
     reg ioReadCtrl = 1'b0;  // 控制信号：IO读取
     reg iowriteCtrl = 1'b0; // 控制信号： IO（LED）写入
@@ -36,9 +34,7 @@ module top_sim( );
     reg RegwriteCtrl = 1'b0;// 控制信号：寄存器写入
     reg RegreadCtrl = 1'b0; // 控制信号：寄存器读取
 
-    
-    
-    reg[31:0] register [0:31]; // 输出信号：寄存器状态
+    wire[31:0] register [0:31]; // 输出信号：寄存器状态
     wire [23:0] ledout;         // 输出信号： LED 信号
     
     // 辅助信号
@@ -48,7 +44,7 @@ module top_sim( );
     wire[15:0] ledwdata;
    
     top topU(clk, rst, ioReadCtrl, MemreadCtrl, iowriteCtrl, ledout, switch_i, MemwriteCtrl, 
-                switchaddr,ledaddr, register, RegAddr, RegwriteCtrl, RegreadCtrl, caddress, 
+                register, RegAddr, RegwriteCtrl, RegreadCtrl, caddress, 
                 ioread_data_switch, write_data, mread_data, ledwdata);
     always #5 clk = ~clk; 
     initial
@@ -74,9 +70,9 @@ module top_sim( );
             switch_i = 24'b111111111111111111111111; // 拨码开关
             RegAddr = 5'b00001;     // 寄存器地址
         // 辅助信号
-            switchaddr = 2'b00;     // 读取后16位
+            caddress = 2'b00;     // 读取后16位
         end
-        #220 switchaddr = 2'b10;    // 读取前8位
+        #220 caddress = 2'b10;    // 读取前8位
         // 控制信号关闭
         #240 begin
             ioReadCtrl = 1'b0;
@@ -111,9 +107,9 @@ module top_sim( );
             iowriteCtrl = 1'b1;
             ioReadCtrl = 1'b1;  // LEDCtrl 使能信号
         // 辅助信号
-            ledaddr = 2'b00;     // 写入后16位   
+            caddress = 2'b00;     // 写入后16位   
         end
-        #840 ledaddr = 2'b10; // 写入前8位
+        #840 caddress = 2'b10; // 写入前8位
         // 控制信号关闭
         #900 begin
             iowriteCtrl = 1'b0;

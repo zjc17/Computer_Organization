@@ -1,33 +1,3 @@
 Vivado Simulator 2017.4
 Time resolution is 1 ps
-time:  0ns, {R_type, I_type, J_type, C_type} = 1000
-time:  0ns, R_type, write_register_address =  7, write_register_1_address =  7, Instruction = 00000000010000110011100000100000
-time =   0, write_register_address =  7, write_register_1_address =  7, write_register_2_address =  3
-time:  0ns, write_date = 00000004
-
-time: 40ns, {R_type, I_type, J_type, C_type} = 0100
-time: 40ns, I_type, write_register_address =  3, write_register_2_address =  3, Instruction = 00100000111000111000000000110111
-time =  40, write_register_address =  3, write_register_1_address = 16, write_register_2_address =  3
-time: 40ns, write_date = ffff803c
-
-time: 60ns, {R_type, I_type, J_type, C_type} = 0100
-time: 60ns, I_type, write_register_address =  4, write_register_2_address =  4, Instruction = 00110000010001001000000010010111
-time =  60, write_register_address =  4, write_register_1_address = 16, write_register_2_address =  4
-andi
-time: 60ns, write_date = 00000002
-
-time: 80ns, {R_type, I_type, J_type, C_type} = 1000
-time: 80ns, R_type, write_register_address =  5, write_register_1_address =  5, Instruction = 00000000000000010010100010000000
-time =  80, write_register_address =  5, write_register_1_address =  5, write_register_2_address =  1
-time: 80ns, write_date = 00000010
-
-time:100ns, {R_type, I_type, J_type, C_type} = 0100
-time:100ns, I_type, write_register_address =  6, write_register_2_address =  6, Instruction = 10001100000001100000000100000000
-time = 100, write_register_address =  6, write_register_1_address =  0, write_register_2_address =  6
-time:100ns, write_date = 0000007b
-
-time:120ns, {R_type, I_type, J_type, C_type} = 0100
-time = 120, write_register_address = 31, write_register_1_address =  0, write_register_2_address =  0
-time:120ns, write_date = 00000004
-
 $finish called at time : 140 ns : File "F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.sim/idcode32_sim.v" Line 92

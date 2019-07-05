@@ -1,5 +1,3 @@
 Vivado Simulator 2017.4
 Time resolution is 1 ps
-not reset time =                    1, busy = x, start = 0, cnt =           x
-Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance sim_divux16.u.divux16_i.clk_wiz_0.inst.mmcm_adv_inst 
-$finish called at time : 680 ns : File "F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sim_1/new/sim_divux16.v" Line 47
+$finish called at time : 820 ns : File "F:/Github/Computer_Organization/src/project_9/divider/divider.srcs/sim_1/new/sim_div.v" Line 58

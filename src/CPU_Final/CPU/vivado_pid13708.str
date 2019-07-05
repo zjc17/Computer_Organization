@@ -1,0 +1,272 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 13708
+License: Customer
+
+Current time: 	Fri May 31 01:00:10 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 36 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	D:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	acezj
+User home directory: C:/Users/acezj
+User working directory: C:/Users/acezj/Desktop/CPU_Final/CPU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2017.4
+RDI_DATADIR: D:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: D:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/acezj/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/acezj/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/acezj/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/acezj/Desktop/CPU_Final/CPU/vivado.log
+Vivado journal file location: 	C:/Users/acezj/Desktop/CPU_Final/CPU/vivado.jou
+Engine tmp dir: 	C:/Users/acezj/Desktop/CPU_Final/CPU/.Xil/Vivado-13708-DESKTOP-RTRUIMN
+
+GUI allocated memory:	173 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 482 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\acezj\Desktop\CPU_Final\CPU\CPU.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// [GUI Memory]: 48 MB (+48160kb) [00:00:14]
+// [Engine Memory]: 482 MB (+354011kb) [00:00:14]
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 483 MB. GUI used memory: 37 MB. Current time: 5/31/19 1:00:14 AM CST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 60 MB (+9892kb) [00:00:23]
+// [Engine Memory]: 510 MB (+3473kb) [00:00:23]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// [Engine Memory]: 537 MB (+2510kb) [00:00:26]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// [GUI Memory]: 69 MB (+5616kb) [00:00:36]
+// [GUI Memory]: 72 MB (+272kb) [00:00:37]
+// Tcl Message: open_project C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Neko1/Desktop/CPU_Final/CPU' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 563 MB. GUI used memory: 45 MB. Current time: 5/31/19 1:00:35 AM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 735.816 ; gain = 61.887 
+// Project name: CPU; location: C:/Users/acezj/Desktop/CPU_Final/CPU; part: xc7a100tfgg484-1
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+dismissDialog("Open Project"); // bs (cj)
+// [Engine Memory]: 565 MB (+896kb) [00:00:42]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 25 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, cj)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 589 MB. GUI used memory: 46 MB. Current time: 5/31/19 1:01:43 AM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// [GUI Memory]: 78 MB (+2661kb) [00:12:05]
+// Elapsed time: 658 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e (cj):  Run Simulation : addNotify
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 630 MB. GUI used memory: 46 MB. Current time: 5/31/19 1:12:11 AM CST
+// TclEventType: LOAD_FEATURE
+// [Engine Memory]: 633 MB (+41167kb) [00:12:16]
+// TclEventType: LOAD_FEATURE
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (e)
+// Tcl Message: INFO: [Vivado 12-5457] ref source:C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/sources_1/ip/RAM/RAM.xci 
+// Tcl Message: generate_target Simulation [get_files C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/sources_1/ip/RAM/RAM.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'RAM'... INFO: [Common 17-365] Interrupt caught but 'generate_target' cannot be canceled. Please wait for command to finish. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-3499] Reset cancelled 'Simulation' target for IP 'RAM'. INFO: [Common 17-681] Processing pending cancel. 
+// Tcl Message: INFO: [Vivado 12-5457] ref source:C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/sources_1/ip/prgrom/prgrom.xci 
+// Tcl Message: generate_target Simulation [get_files C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/sources_1/ip/prgrom/prgrom.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (e)
+// 'd' command handler elapsed time: 8 seconds
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.sim/sim_1/synth/func/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 667 MB (+2605kb) [00:12:51]
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tfgg484-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 672 MB. GUI used memory: 47 MB. Current time: 5/31/19 1:12:46 AM CST
+// [GUI Memory]: 91 MB (+9232kb) [00:13:00]
+// [Engine Memory]: 876 MB (+184143kb) [00:13:00]
+// Elapsed time: 36 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_wrapper (CPU_wrapper.v)]", 1); // B (D, cj)
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// [Engine Memory]: 958 MB (+40653kb) [00:13:02]
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_wrapper (CPU_wrapper.v)]", 1); // B (D, cj)
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 995 MB. GUI used memory: 46 MB. Current time: 5/31/19 1:13:01 AM CST
+// [Engine Memory]: 1,009 MB (+2572kb) [00:13:08]
+// Elapsed time: 15 seconds
+closeMainWindow("CPU - [C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.xpr] - Vivado 2017.4"); // cj
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'
+// [Engine Memory]: 1,429 MB (+387853kb) [00:13:18]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,432 MB. GUI used memory: 47 MB. Current time: 5/31/19 1:13:14 AM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.6s
+// Xgd.load filename: D:/Xilinx/Vivado/2017.4/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 1.6s
+// [Engine Memory]: 1,529 MB (+29509kb) [00:13:21]
+// [GUI Memory]: 96 MB (+586kb) [00:13:24]
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Parsing XDC File [c:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/sources_1/bd/CPU/ip/CPU_clk_wiz_0_0/CPU_clk_wiz_0_0_board.xdc] for cell 'CPU_i/cpuclk/inst' Finished Parsing XDC File [c:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/sources_1/bd/CPU/ip/CPU_clk_wiz_0_0/CPU_clk_wiz_0_0_board.xdc] for cell 'CPU_i/cpuclk/inst' Parsing XDC File [c:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/sources_1/bd/CPU/ip/CPU_clk_wiz_0_0/CPU_clk_wiz_0_0.xdc] for cell 'CPU_i/cpuclk/inst' 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/sources_1/bd/CPU/ip/CPU_clk_wiz_0_0/CPU_clk_wiz_0_0.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [c:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/sources_1/bd/CPU/ip/CPU_clk_wiz_0_0/CPU_clk_wiz_0_0.xdc:57] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 1689.094 ; gain = 565.270 
+// Tcl Message: Finished Parsing XDC File [c:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/sources_1/bd/CPU/ip/CPU_clk_wiz_0_0/CPU_clk_wiz_0_0.xdc] for cell 'CPU_i/cpuclk/inst' Parsing XDC File [C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/constrs_1/new/sdf.xdc] Finished Parsing XDC File [C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.srcs/constrs_1/new/sdf.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+selectButton("PAResourceItoN.MainWindow_BACKGROUND_TASK_RUNNING_Wait", "Wait"); // JButton (A, G)
+// Tcl Message: open_run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:35 . Memory (MB): peak = 1690.699 ; gain = 903.137 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.sim/sim_1/synth/func/xsim/cpu_sim_func_synth.v" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 9); // u (O, cj)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 9); // u (O, cj)
+// [GUI Memory]: 104 MB (+2586kb) [00:13:31]
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 9); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 9); // u (O, cj)
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.sim/sim_1/synth/func/xsim' 
+// Tcl Message: "xvlog --incr --relax -L xil_defaultlib -prj cpu_sim_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '4' seconds INFO: [USF-XSim-3] XSim::Elaborate design 
+selectGraphicalView(PAResourceOtoP.PAViews_PACKAGE, 1642, 2617); // B (C, cj)
+// Package select: 'Package Pin - M7'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 514, 303, 1227, 613); // A (k, cj)
+// [GUI Memory]: 113 MB (+4537kb) [00:13:40]
+selectGraphicalView(PAResourceOtoP.PAViews_PACKAGE, 1331, 2720); // B (C, cj)
+// Package select: 'Package Pin - N6'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 478, 315, 1227, 613); // A (k, cj)
+// Tcl Message: INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.sim/sim_1/synth/func/xsim' 
+selectGraphicalView(PAResourceOtoP.PAViews_PACKAGE, 1296, 3575); // B (C, cj)
+// Package select: 'I/O Bank - I/O Bank 34'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 474, 414, 1227, 613); // A (k, cj)
+// PAPropertyPanels.initPanels (I/O Bank 34) elapsed time: 0.3s
+// [GUI Memory]: 119 MB (+485kb) [00:13:43]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cj)
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 225432, 293929); // D (M, cj)
+// Device view-level: 1.8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 251372, 327885); // D (M, cj)
+// Device select: 'Site - SLICE_X56Y109'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 2400, 3131, 1227, 613); // Y (k, cj)
+// PAPropertyPanels.initPanels (Site: SLICE_X56Y109) elapsed time: 0.2s
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 242555, 335442); // D (M, cj)
+// Device view-level: 0.0
+// [GUI Memory]: 126 MB (+1139kb) [00:13:48]
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 65446, 282767); // D (M, cj)
+// Device view-level: 1.1
+// HMemoryUtils.trashcanNow. Engine heap size: 1,583 MB. GUI used memory: 87 MB. Current time: 5/31/19 1:13:44 AM CST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 44947, 331617); // D (M, cj)
+// Device view-level: 2.3
+// Tcl Message: Completed static elaboration 
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 45805, 351301); // D (M, cj)
+// Device view-level: 0.0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, -2766, 415469); // D (M, cj)
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // Y
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis 
+closeMainWindow("CPU - [C:/Users/acezj/Desktop/CPU_Final/CPU/CPU.xpr] - Vivado 2017.4"); // cj
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'

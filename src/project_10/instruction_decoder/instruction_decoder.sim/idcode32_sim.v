@@ -35,7 +35,7 @@ module idcode32_sim( );
     wire[31:0] read_data_1;
     wire[31:0] read_data_2;
     wire[31:0] Sign_extend;
-    reg[31:0] register[0:31];
+    wire[31:0] register[0:31];
     
     decoder Uid(.read_data_1(read_data_1),.read_data_2(read_data_2),.Instruction(Instruction),.read_data(read_data),.ALU_result(ALU_result),
                      .Jal(Jal),.RegWrite(RegWrite),.MemtoReg(MemtoReg),.RegDst(RegDst),.Sign_extend(Sign_extend),.clk(clock),.rst(reset),

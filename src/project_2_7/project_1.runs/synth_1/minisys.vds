@@ -1,0 +1,557 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 27 09:51:04 2019
+# Process ID: 18324
+# Current directory: C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1
+# Command line: vivado.exe -log minisys.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source minisys.tcl
+# Log file: C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/minisys.vds
+# Journal file: C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source minisys.tcl -notrace
+Command: synth_design -top minisys -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20156 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 344.629 ; gain = 102.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'minisys' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/minisys.v:3]
+INFO: [Synth 8-638] synthesizing module 'cpuclk' [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'cpuclk' (1#1) [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'Ifetc32' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/ifetch32.v:3]
+INFO: [Synth 8-638] synthesizing module 'prgrom' [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'prgrom' (2#1) [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/realtime/prgrom_stub.v:6]
+WARNING: [Synth 8-350] instance 'instmem' of module 'prgrom' requires 5 connections, but only 3 given [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/ifetch32.v:24]
+INFO: [Synth 8-256] done synthesizing module 'Ifetc32' (3#1) [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/ifetch32.v:3]
+INFO: [Synth 8-638] synthesizing module 'Idecode32' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/idecode32.v:4]
+INFO: [Synth 8-256] done synthesizing module 'Idecode32' (4#1) [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/idecode32.v:4]
+INFO: [Synth 8-638] synthesizing module 'control32' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/control32.v:3]
+INFO: [Synth 8-256] done synthesizing module 'control32' (5#1) [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/control32.v:3]
+INFO: [Synth 8-638] synthesizing module 'Executs32' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/Executes32.v:4]
+INFO: [Synth 8-226] default block is never used [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/Executes32.v:72]
+INFO: [Synth 8-256] done synthesizing module 'Executs32' (6#1) [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/Executes32.v:4]
+INFO: [Synth 8-638] synthesizing module 'dmemory32' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/dmemory32.v:3]
+INFO: [Synth 8-638] synthesizing module 'ram' [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/realtime/ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram' (7#1) [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/realtime/ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dmemory32' (8#1) [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/dmemory32.v:3]
+INFO: [Synth 8-638] synthesizing module 'memorio' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/memorio.v:4]
+INFO: [Synth 8-256] done synthesizing module 'memorio' (9#1) [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/memorio.v:4]
+INFO: [Synth 8-638] synthesizing module 'ioread' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/ioread.v:4]
+INFO: [Synth 8-256] done synthesizing module 'ioread' (10#1) [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/ioread.v:4]
+INFO: [Synth 8-638] synthesizing module 'leds' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/leds.v:5]
+INFO: [Synth 8-256] done synthesizing module 'leds' (11#1) [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/leds.v:5]
+INFO: [Synth 8-638] synthesizing module 'switchs' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/switchs.v:4]
+INFO: [Synth 8-256] done synthesizing module 'switchs' (12#1) [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/switchs.v:4]
+WARNING: [Synth 8-689] width (16) of port connection 'switchrdata' does not match port width (24) of module 'switchs' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/minisys.v:165]
+INFO: [Synth 8-256] done synthesizing module 'minisys' (13#1) [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/minisys.v:3]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[31]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[30]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[29]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[28]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[27]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[26]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[25]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[24]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[23]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[22]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[21]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[20]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[19]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[18]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[17]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[16]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[1]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[0]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Function_opcode[5]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Function_opcode[4]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Exe_opcode[5]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Exe_opcode[4]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Exe_opcode[3]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Jrn
+WARNING: [Synth 8-3331] design Executs32 has unconnected port PC_plus_4[1]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port PC_plus_4[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 396.922 ; gain = 154.871
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 396.922 ; gain = 154.871
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/dcp3/ram_in_context.xdc] for cell 'memory/ram'
+Finished Parsing XDC File [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/dcp3/ram_in_context.xdc] for cell 'memory/ram'
+Parsing XDC File [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/dcp4/cpuclk_in_context.xdc] for cell 'cpuclk'
+Finished Parsing XDC File [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/dcp4/cpuclk_in_context.xdc] for cell 'cpuclk'
+Parsing XDC File [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/dcp5/prgrom_in_context.xdc] for cell 'ifetch/instmem'
+Finished Parsing XDC File [C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/dcp5/prgrom_in_context.xdc] for cell 'ifetch/instmem'
+Parsing XDC File [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ALUOp[1]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'ALUOp[0]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[5]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[4]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[3]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[2]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[1]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[0]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[5]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[4]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[3]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[2]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[1]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[0]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'Branch'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'ALUSrc'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'I_format'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'Jal'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'Jmp'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'Jrn'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'MemtoReg'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'MemWrite'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'nBranch'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'RegDST'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'RegWrite'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'Sftmd'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'Jrn'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'RegDST'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'ALUSrc'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'MemtoReg'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'RegWrite'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'MemWrite'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'Branch'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'nBranch'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'Jmp'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'Jal'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'I_format'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'Sftmd'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[0]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[1]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[2]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[3]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[4]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'Function_opcode[5]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'ALUOp[0]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'ALUOp[1]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[0]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[1]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[2]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:157]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[3]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[4]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'Opcode[5]'. [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc:160]
+Finished Parsing XDC File [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/minisys_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/14029/Desktop/project_2_7/project_1.srcs/constrs_1/imports/final/minisys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minisys_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minisys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 756.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 756.891 ; gain = 514.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 756.891 ; gain = 514.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/dcp4/cpuclk_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/.Xil/Vivado-18324-DESKTOP-P6N0V7Q/dcp4/cpuclk_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for cpuclk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ifetch/instmem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for memory/ram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 756.891 ; gain = 514.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "register_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_format" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Lw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Sw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "I_format" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nBranch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Jmp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/Executes32.v:69]
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'next_PC_reg' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/ifetch32.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'ioread_data_reg' [C:/Users/14029/Desktop/project_2_7/project_1.srcs/sources_1/new/ioread.v:15]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 756.891 ; gain = 514.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   3 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 31    
+	   3 Input      1 Bit        Muxes := 30    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Ifetc32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 1     
+Module Idecode32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 18    
+	   3 Input      1 Bit        Muxes := 30    
+Module control32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 12    
+Module Executs32 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module memorio 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module leds 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+Module switchs 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Function_opcode[5]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Function_opcode[4]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Exe_opcode[5]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Exe_opcode[4]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Exe_opcode[3]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port Jrn
+WARNING: [Synth 8-3331] design Executs32 has unconnected port PC_plus_4[1]
+WARNING: [Synth 8-3331] design Executs32 has unconnected port PC_plus_4[0]
+WARNING: [Synth 8-3332] Sequential element (ifetch/PC_reg[1]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/PC_reg[0]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[31]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[30]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[29]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[28]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[27]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[26]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[25]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[24]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[23]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[22]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[21]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[20]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[19]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[18]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[17]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[16]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[15]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[14]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[13]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[12]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[11]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[10]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[9]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[8]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[7]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[6]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[5]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[4]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[3]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[2]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[1]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (ifetch/next_PC_reg[0]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (switch24/switchrdata_reg[23]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (switch24/switchrdata_reg[22]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (switch24/switchrdata_reg[21]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (switch24/switchrdata_reg[20]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (switch24/switchrdata_reg[19]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (switch24/switchrdata_reg[18]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (switch24/switchrdata_reg[17]) is unused and will be removed from module minisys.
+WARNING: [Synth 8-3332] Sequential element (switch24/switchrdata_reg[16]) is unused and will be removed from module minisys.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 756.891 ; gain = 514.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'cpuclk/clk_out1' to pin 'cpuclk/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 787.879 ; gain = 545.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:04 . Memory (MB): peak = 937.398 ; gain = 695.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:09 ; elapsed = 00:02:12 . Memory (MB): peak = 937.398 ; gain = 695.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 937.398 ; gain = 695.348
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 937.398 ; gain = 695.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 937.398 ; gain = 695.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 937.398 ; gain = 695.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 937.398 ; gain = 695.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 937.398 ; gain = 695.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |cpuclk        |         1|
+|2     |prgrom        |         1|
+|3     |ram           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |cpuclk |     1|
+|2     |prgrom |     1|
+|3     |ram    |     1|
+|4     |CARRY4 |    24|
+|5     |LUT1   |     4|
+|6     |LUT2   |   101|
+|7     |LUT3   |   175|
+|8     |LUT4   |    91|
+|9     |LUT5   |   244|
+|10    |LUT6   |  1193|
+|11    |MUXF7  |   256|
+|12    |MUXF8  |    88|
+|13    |FDCE   |    40|
+|14    |FDRE   |  1004|
+|15    |FDSE   |    80|
+|16    |LDC    |    16|
+|17    |IBUF   |    25|
+|18    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+----------+------+
+|      |Instance      |Module    |Cells |
++------+--------------+----------+------+
+|1     |top           |          |  3430|
+|2     |  idecode     |Idecode32 |  2225|
+|3     |  ifetch      |Ifetc32   |  1064|
+|4     |  led24       |leds      |    24|
+|5     |  memory      |dmemory32 |    35|
+|6     |  multiioread |ioread    |    16|
+|7     |  switch24    |switchs   |    16|
++------+--------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 937.398 ; gain = 695.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 33 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:51 ; elapsed = 00:02:06 . Memory (MB): peak = 937.398 ; gain = 335.379
+Synthesis Optimization Complete : Time (s): cpu = 00:02:11 ; elapsed = 00:02:13 . Memory (MB): peak = 937.398 ; gain = 695.348
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 409 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LDC => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 133 Warnings, 33 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:13 ; elapsed = 00:02:18 . Memory (MB): peak = 937.398 ; gain = 705.820
+INFO: [Common 17-1381] The checkpoint 'C:/Users/14029/Desktop/project_2_7/project_1.runs/synth_1/minisys.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file minisys_utilization_synth.rpt -pb minisys_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 937.398 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 27 09:53:33 2019...

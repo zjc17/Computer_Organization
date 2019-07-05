@@ -1,0 +1,196 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon May 27 15:14:32 2019
+| Host         : DESKTOP-A1ENHH6 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file CPU_wrapper_methodology_drc_routed.rpt -pb CPU_wrapper_methodology_drc_routed.pb -rpx CPU_wrapper_methodology_drc_routed.rpx
+| Design       : CPU_wrapper
+| Device       : xc7a100tfgg484-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 32
++-----------+----------+--------------------------+------------+
+| Rule      | Severity | Description              | Violations |
++-----------+----------+--------------------------+------------+
+| TIMING-20 | Warning  | Non-clocked latch        | 16         |
+| TIMING-23 | Warning  | Combinational loop found | 16         |
++-----------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[0] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[10] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[11] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[12] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[13] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[14] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[15] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[1] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[2] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[3] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[4] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[5] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[6] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[7] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[8] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[9] cannot be properly analyzed as its control pin CPU_i/StorageTop_0/inst/u_ioread/ioread_data_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[0]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[0]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[10]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[10]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[11]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[11]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[12]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[12]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[13]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[13]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#6 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[14]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[14]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#7 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[15]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[15]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#8 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[1]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[1]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#9 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[2]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[2]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#10 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[3]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[3]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#11 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[4]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[4]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#12 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[5]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[5]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#13 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[6]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[6]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#14 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[7]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[7]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#15 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[8]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[8]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#16 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between CPU_i/StorageTop_0/inst/u_dmemory32/rdata[9]_INST_0/I4 and CPU_i/StorageTop_0/inst/u_dmemory32/rdata[9]_INST_0/O to disable the timing loop
+Related violations: <none>
+
+

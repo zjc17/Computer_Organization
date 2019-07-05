@@ -21,14 +21,14 @@
 
 
 module div #(parameter WIDTH = 8)(
-    input [WIDTH-1:0] a, // 被除数
-    input [WIDTH/2-1:0] b, // 除数
+    input [WIDTH-1:0] a, // ??????
+    input [WIDTH/2-1:0] b, // ????
     input clk,
     input start,
     input resetn, 
-    output reg [WIDTH-1:0]  q, //    商
-    output reg [WIDTH/2-1:0] r, // 余数
-    output reg busy // 正在做除法
+    output reg [WIDTH-1:0]  q, //    ??
+    output reg [WIDTH/2-1:0] r, // ????
+    output reg busy // ??????????
  );   
     integer cnt;
     reg [WIDTH-1:0] Quotient;
@@ -37,7 +37,7 @@ module div #(parameter WIDTH = 8)(
     reg [WIDTH+WIDTH/2:0] diff;
     reg sign_q;
     always@(posedge clk or negedge resetn) begin
-        if (~resetn | (~(|b) & start)) begin // resetn 或 除数 为0
+        if (~resetn | (~(|b) & start)) begin // resetn ?? ???? ?0
              Quotient = 0;
              Divisor = 0;
              Remainder = 0;
@@ -45,7 +45,7 @@ module div #(parameter WIDTH = 8)(
              q = 0;
              r = 0;
         end else begin
-            if (cnt > 0) begin      // cnt > 0 正在计算
+            if (cnt > 0) begin      // cnt > 0 ???????
             cnt = cnt - 1;
             diff = Remainder - Divisor;
             Quotient = Quotient << 1;
@@ -54,7 +54,7 @@ module div #(parameter WIDTH = 8)(
                 Quotient[0] = 1'b1;
             end
             Divisor = Divisor >> 1;
-            end else if (~busy & start) begin // busy = 0 且 start 有效, 进行初始化
+            end else if (~busy & start) begin // busy = 0 ?? start ??Ч, ???г????
                 busy = 1;
                 sign_q = a[WIDTH-1]^b[WIDTH/2-1];
                 if (a[WIDTH-1]) Remainder[WIDTH-1:0] = ~a + 1; // -
@@ -66,7 +66,7 @@ module div #(parameter WIDTH = 8)(
                 Quotient = 0;
                 diff = 0;
                 cnt = WIDTH + 1;
-            end else if (cnt == 0) begin // cnt = 0 计算结束
+            end else if (cnt == 0) begin // cnt = 0 ???????
                 busy = 0; 
                 if (sign_q) q = ~Quotient + 1;
                 else        q = Quotient;

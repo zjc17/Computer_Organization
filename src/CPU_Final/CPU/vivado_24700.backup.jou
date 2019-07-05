@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May 26 17:34:13 2019
+# Process ID: 24700
+# Current directory: E:/F Backup/CO/Lab/CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9460 E:\F Backup\CO\Lab\CPU\CPU.xpr
+# Log file: E:/F Backup/CO/Lab/CPU/vivado.log
+# Journal file: E:/F Backup/CO/Lab/CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/F Backup/CO/Lab/CPU/CPU.xpr}
+add_files -norecurse -scan_for_includes {{E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/new/memorio.v} {E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/new/StorageTop.v} {E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/new/leds.v} {E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/new/switchs.v} {E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/new/ioread.v} {E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/new/dmemory32.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {{E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/ip}} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+add_files -norecurse -scan_for_includes {{E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/ip/RAM/RAM.xci}}
+export_ip_user_files -of_objects  [get_files  {{E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/ip/RAM/RAM.xci}}] -lib_map_path [list {modelsim=E:/F Backup/CO/Lab/CPU/CPU.cache/compile_simlib/modelsim} {questa=E:/F Backup/CO/Lab/CPU/CPU.cache/compile_simlib/questa} {riviera=E:/F Backup/CO/Lab/CPU/CPU.cache/compile_simlib/riviera} {activehdl=E:/F Backup/CO/Lab/CPU/CPU.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+set_property part xc7a100tfgg484-1 [current_project]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes {{E:/F Backup/CO/Lab/CPU/CPU.srcs/sim_1/new/ST_sim.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ST_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source ST_sim.tcl
+add_files -norecurse -scan_for_includes {{E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/new/ifetc32.v} {E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/new/control32.v} {E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/new/executs32.v} {E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/new/idecode32-1.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {{E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/ip/prgrom/prgrom.xci}}
+export_ip_user_files -of_objects  [get_files  {{E:/F Backup/CO/Lab/CPU/CPU.srcs/sources_1/ip/prgrom/prgrom.xci}}] -lib_map_path [list {modelsim=E:/F Backup/CO/Lab/CPU/CPU.cache/compile_simlib/modelsim} {questa=E:/F Backup/CO/Lab/CPU/CPU.cache/compile_simlib/questa} {riviera=E:/F Backup/CO/Lab/CPU/CPU.cache/compile_simlib/riviera} {activehdl=E:/F Backup/CO/Lab/CPU/CPU.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+create_bd_design "CPU"
+create_bd_cell -type module -reference StorageTop StorageTop_0
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference control32 control32_0
+create_bd_cell -type module -reference Idecode32 Idecode32_0
+create_bd_cell -type module -reference Ifetc32 Ifetc32_0
+create_bd_cell -type module -reference Executs32 Executs32_0
+set_property location {3 889 -337} [get_bd_cells Executs32_0]
+set_property location {2 463 -411} [get_bd_cells Ifetc32_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_0
+endgroup
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {23.000} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {46} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {40} CONFIG.CLKOUT1_JITTER {342.117} CONFIG.CLKOUT1_PHASE_ERROR {303.235}] [get_bd_cells clk_wiz_0]
+set_property name cpuclk [get_bd_cells clk_wiz_0]
+set_property location {1 111 -211} [get_bd_cells cpuclk]
+set_property location {2 513 -216} [get_bd_cells control32_0]
+set_property location {3 944 99} [get_bd_cells Ifetc32_0]
+set_property location {2 546 -381} [get_bd_cells control32_0]
+set_property location {3 944 47} [get_bd_cells Ifetc32_0]
+set_property location {3.5 1129 48} [get_bd_cells Executs32_0]
+set_property location {2 375 1} [get_bd_cells Idecode32_0]
+set_property location {2 335 202} [get_bd_cells Ifetc32_0]
+set_property location {2.5 721 32} [get_bd_cells Idecode32_0]
+set_property location {2 345 3} [get_bd_cells Ifetc32_0]
+set_property location {3 673 -426} [get_bd_cells control32_0]
+connect_bd_net [get_bd_pins cpuclk/clk_out1] [get_bd_pins Ifetc32_0/clock]
+create_bd_port -dir I reset
+connect_bd_net [get_bd_ports reset] [get_bd_pins Ifetc32_0/reset]
+set_property location {46 86} [get_bd_ports reset]
+set_property location {-66 127} [get_bd_ports reset]
+connect_bd_net [get_bd_pins cpuclk/clk_out1] [get_bd_pins Idecode32_0/clock]
+connect_bd_net [get_bd_ports reset] [get_bd_pins Idecode32_0/reset]
+connect_bd_net [get_bd_pins cpuclk/clk_out1] [get_bd_pins StorageTop_0/clock]
+connect_bd_net [get_bd_ports reset] [get_bd_pins StorageTop_0/reset]
+save_bd_design
+connect_bd_net [get_bd_pins Ifetc32_0/Instruction] [get_bd_pins Idecode32_0/Instruction]
+set_property location {2 346 -96} [get_bd_cells Ifetc32_0]
+set_property location {2 345 -79} [get_bd_cells Ifetc32_0]
+set_property location {3 710 -48} [get_bd_cells Idecode32_0]
+set_property location {3 708 -26} [get_bd_cells Idecode32_0]
+set_property location {3 704 -10} [get_bd_cells Idecode32_0]
+connect_bd_net [get_bd_pins control32_0/Branch] [get_bd_pins Ifetc32_0/Branch]
+connect_bd_net [get_bd_pins control32_0/nBranch] [get_bd_pins Ifetc32_0/nBranch]
+connect_bd_net [get_bd_pins control32_0/Jmp] [get_bd_pins Ifetc32_0/Jmp]
+connect_bd_net [get_bd_pins control32_0/Jal] [get_bd_pins Ifetc32_0/Jal]
+connect_bd_net [get_bd_pins control32_0/Jrn] [get_bd_pins Ifetc32_0/Jrn]
+connect_bd_net [get_bd_pins Executs32_0/Zero] [get_bd_pins Ifetc32_0/Zero]
+connect_bd_net [get_bd_pins Executs32_0/Add_Result] [get_bd_pins Ifetc32_0/Add_result]
+connect_bd_net [get_bd_pins Idecode32_0/read_data_1] [get_bd_pins Ifetc32_0/Read_data_1]
+connect_bd_net [get_bd_pins Ifetc32_0/PC_plus_4_out] [get_bd_pins Executs32_0/PC_plus_4]
+connect_bd_net [get_bd_pins Idecode32_0/read_data_1] [get_bd_pins Executs32_0/Read_data_1]
+connect_bd_net [get_bd_pins Idecode32_0/read_data_2] [get_bd_pins Executs32_0/Read_data_2]
+connect_bd_net [get_bd_pins Idecode32_0/Sign_extend] [get_bd_pins Executs32_0/Sign_extend]
+set_property location {4 1241 76} [get_bd_cells Executs32_0]
+create_bd_port -dir I -from 23 -to 0 switch_port
+set_property location {1513 292} [get_bd_ports switch_port]
+connect_bd_net [get_bd_ports switch_port] [get_bd_pins StorageTop_0/switch_i]
+create_bd_port -dir O -from 23 -to 0 -type data led_port
+delete_bd_objs [get_bd_ports led_port]
+create_bd_port -dir O -from 23 -to 0 led_port
+set_property location {1831 -5} [get_bd_ports led_port]
+set_property location {1809 30} [get_bd_ports led_port]
+set_property location {1801 21} [get_bd_ports led_port]
+delete_bd_objs [get_bd_ports led_port]
+create_bd_port -dir O -from 23 -to 0 led_port
+connect_bd_net [get_bd_ports led_port] [get_bd_pins StorageTop_0/ledout]
+set_property location {1816 28} [get_bd_ports led_port]
+connect_bd_net [get_bd_pins StorageTop_0/rdata] [get_bd_pins Idecode32_0/read_data]
+connect_bd_net [get_bd_pins Executs32_0/ALU_Result] [get_bd_pins Idecode32_0/ALU_result]
+connect_bd_net [get_bd_pins control32_0/Jal] [get_bd_pins Idecode32_0/Jal]
+connect_bd_net [get_bd_pins control32_0/RegWrite] [get_bd_pins Idecode32_0/RegWrite]
+connect_bd_net [get_bd_pins control32_0/MemIOtoReg] [get_bd_pins Idecode32_0/MemtoReg]
+connect_bd_net [get_bd_pins control32_0/RegDST] [get_bd_pins Idecode32_0/RegDst]
+connect_bd_net [get_bd_pins Ifetc32_0/opcplus4] [get_bd_pins Idecode32_0/opcplus4]
+connect_bd_net [get_bd_pins control32_0/MemRead] [get_bd_pins StorageTop_0/memread]
+connect_bd_net [get_bd_pins control32_0/MemWrite] [get_bd_pins StorageTop_0/memwrite]
+connect_bd_net [get_bd_pins control32_0/IORead] [get_bd_pins StorageTop_0/ioread]
+connect_bd_net [get_bd_pins control32_0/IOWrite] [get_bd_pins StorageTop_0/iowrite]
+connect_bd_net [get_bd_pins control32_0/ALUSrc] [get_bd_pins Executs32_0/ALUSrc]
+connect_bd_net [get_bd_pins control32_0/Sftmd] [get_bd_pins Executs32_0/Sftmd]
+connect_bd_net [get_bd_pins control32_0/Jrn] [get_bd_pins Executs32_0/Jrn]
+connect_bd_net [get_bd_pins control32_0/I_format] [get_bd_pins Executs32_0/I_format]
+connect_bd_net [get_bd_pins Executs32_0/ALU_Result] [get_bd_pins StorageTop_0/caddress]
+connect_bd_net [get_bd_pins control32_0/ALUOp] [get_bd_pins Executs32_0/ALUOp]
+connect_bd_net [get_bd_pins Idecode32_0/read_data_2] [get_bd_pins StorageTop_0/wdata]
+save_bd_design
+connect_bd_net [get_bd_pins Ifetc32_0/Instruction] [get_bd_pins control32_0/Opcode]
+undo
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+delete_bd_objs [get_bd_cells xlconcat_0]
+save_bd_design
+update_module_reference CPU_Ifetc32_0_0
+connect_bd_net [get_bd_pins Ifetc32_0/Opcode] [get_bd_pins control32_0/Opcode]
+connect_bd_net [get_bd_pins Ifetc32_0/Function_opcode] [get_bd_pins control32_0/Function_opcode]
+connect_bd_net [get_bd_pins Ifetc32_0/Opcode] [get_bd_pins Executs32_0/Exe_opcode]
+connect_bd_net [get_bd_pins Ifetc32_0/Function_opcode] [get_bd_pins Executs32_0/Function_opcode]
+save_bd_design
+close_sim

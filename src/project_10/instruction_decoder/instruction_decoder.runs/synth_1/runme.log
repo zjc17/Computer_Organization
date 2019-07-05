@@ -1,0 +1,345 @@
+
+*** Running vivado
+    with args -log decoder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source decoder.tcl -notrace
+Command: synth_design -top decoder -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11948 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 330.289 ; gain = 100.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'decoder' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:56]
+WARNING: [Synth 8-153] case item 6'b00001x will never be executed [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:74]
+WARNING: [Synth 8-153] case item 6'b0100xx will never be executed [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:74]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (1#1) [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:22]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 382.484 ; gain = 152.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 382.484 ; gain = 152.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 382.484 ; gain = 152.906
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "andi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ori" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[0]' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'write_register_address_reg' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:84]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 386.742 ; gain = 157.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 42    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 42    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 561.633 ; gain = 332.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 561.633 ; gain = 332.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 561.633 ; gain = 332.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 561.633 ; gain = 332.055
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][31] with 1st driver pin 'register_reg[0][31]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][31] with 2nd driver pin 'register_reg[0][31]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][30] with 1st driver pin 'register_reg[0][30]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][30] with 2nd driver pin 'register_reg[0][30]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][29] with 1st driver pin 'register_reg[0][29]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][29] with 2nd driver pin 'register_reg[0][29]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][28] with 1st driver pin 'register_reg[0][28]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][28] with 2nd driver pin 'register_reg[0][28]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][27] with 1st driver pin 'register_reg[0][27]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][27] with 2nd driver pin 'register_reg[0][27]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][26] with 1st driver pin 'register_reg[0][26]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][26] with 2nd driver pin 'register_reg[0][26]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][25] with 1st driver pin 'register_reg[0][25]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][25] with 2nd driver pin 'register_reg[0][25]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][24] with 1st driver pin 'register_reg[0][24]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][24] with 2nd driver pin 'register_reg[0][24]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][23] with 1st driver pin 'register_reg[0][23]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][23] with 2nd driver pin 'register_reg[0][23]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][22] with 1st driver pin 'register_reg[0][22]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][22] with 2nd driver pin 'register_reg[0][22]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][21] with 1st driver pin 'register_reg[0][21]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][21] with 2nd driver pin 'register_reg[0][21]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][20] with 1st driver pin 'register_reg[0][20]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][20] with 2nd driver pin 'register_reg[0][20]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][19] with 1st driver pin 'register_reg[0][19]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][19] with 2nd driver pin 'register_reg[0][19]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][18] with 1st driver pin 'register_reg[0][18]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][18] with 2nd driver pin 'register_reg[0][18]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][17] with 1st driver pin 'register_reg[0][17]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][17] with 2nd driver pin 'register_reg[0][17]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][16] with 1st driver pin 'register_reg[0][16]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][16] with 2nd driver pin 'register_reg[0][16]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][15] with 1st driver pin 'register_reg[0][15]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][15] with 2nd driver pin 'register_reg[0][15]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][14] with 1st driver pin 'register_reg[0][14]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][14] with 2nd driver pin 'register_reg[0][14]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][13] with 1st driver pin 'register_reg[0][13]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][13] with 2nd driver pin 'register_reg[0][13]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][12] with 1st driver pin 'register_reg[0][12]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][12] with 2nd driver pin 'register_reg[0][12]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][11] with 1st driver pin 'register_reg[0][11]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][11] with 2nd driver pin 'register_reg[0][11]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][10] with 1st driver pin 'register_reg[0][10]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][10] with 2nd driver pin 'register_reg[0][10]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][9] with 1st driver pin 'register_reg[0][9]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][9] with 2nd driver pin 'register_reg[0][9]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][8] with 1st driver pin 'register_reg[0][8]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][8] with 2nd driver pin 'register_reg[0][8]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][7] with 1st driver pin 'register_reg[0][7]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][7] with 2nd driver pin 'register_reg[0][7]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][6] with 1st driver pin 'register_reg[0][6]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][6] with 2nd driver pin 'register_reg[0][6]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][5] with 1st driver pin 'register_reg[0][5]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][5] with 2nd driver pin 'register_reg[0][5]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][4] with 1st driver pin 'register_reg[0][4]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][4] with 2nd driver pin 'register_reg[0][4]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][3] with 1st driver pin 'register_reg[0][3]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][3] with 2nd driver pin 'register_reg[0][3]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][2] with 1st driver pin 'register_reg[0][2]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][2] with 2nd driver pin 'register_reg[0][2]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][1] with 1st driver pin 'register_reg[0][1]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][1] with 2nd driver pin 'register_reg[0][1]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][0] with 1st driver pin 'register_reg[0][0]__0/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:69]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[0][0] with 2nd driver pin 'register_reg[0][0]/Q' [F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.srcs/sources_1/new/decoder.v:111]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       32|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 561.633 ; gain = 332.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 561.633 ; gain = 332.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 561.633 ; gain = 332.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 561.633 ; gain = 332.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 561.633 ; gain = 332.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     2|
+|2     |LUT4  |     5|
+|3     |LUT5  |    33|
+|4     |LUT6  |   614|
+|5     |MUXF7 |   256|
+|6     |FDRE  |   944|
+|7     |FDSE  |    80|
+|8     |LDC   |    32|
+|9     |LDP   |     5|
+|10    |IBUF  |   134|
+|11    |OBUF  |    96|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  2201|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 561.633 ; gain = 332.055
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 64 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 561.633 ; gain = 332.055
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 561.633 ; gain = 332.055
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 427 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'decoder' is not ideal for floorplanning, since the cellview 'decoder' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 37 instances were transformed.
+  LDC => LDCE: 32 instances
+  LDP => LDPE: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 5 Warnings, 64 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 650.402 ; gain = 424.469
+INFO: [Common 17-1381] The checkpoint 'F:/Github/Computer_Organization/src/project_10/instruction_decoder/instruction_decoder.runs/synth_1/decoder.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file decoder_utilization_synth.rpt -pb decoder_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 650.402 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 30 20:27:38 2019...

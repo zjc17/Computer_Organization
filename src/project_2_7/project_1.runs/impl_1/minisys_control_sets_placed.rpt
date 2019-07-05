@@ -1,0 +1,104 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon May 27 09:54:21 2019
+| Host         : DESKTOP-P6N0V7Q running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file minisys_control_sets_placed.rpt
+| Design       : minisys
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    41 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              46 |           18 |
+| Yes          | No                    | No                     |              30 |            9 |
+| Yes          | No                    | Yes                    |              40 |            9 |
+| Yes          | Yes                   | No                     |            1024 |          514 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+---------------------------------+-----------------------+------------------+----------------+
+|          Clock Signal          |          Enable Signal          |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
++--------------------------------+---------------------------------+-----------------------+------------------+----------------+
+|  cpuclk/inst/clk_out1          |                                 |                       |                2 |              2 |
+| ~cpuclk/inst/clk_out1          |                                 |                       |                2 |              2 |
+| ~cpuclk/inst/clk_out1          |                                 | ifetch/PC[31]_i_1_n_0 |                1 |              4 |
+|  cpuclk/inst/clk_out1          | ifetch/ledout_reg[23][1]        | rst_IBUF              |                2 |              8 |
+|  ifetch/register_reg[0][15][0] |                                 | rst_IBUF              |                6 |             16 |
+| ~cpuclk/inst/clk_out1          | ifetch/switchrdata_reg[0]_13[0] | rst_IBUF              |                2 |             16 |
+|  cpuclk/inst/clk_out1          | ifetch/ledout_reg[23][0]        | rst_IBUF              |                5 |             16 |
+| ~cpuclk/inst/clk_out1          |                                 | rst_IBUF              |               11 |             26 |
+| ~cpuclk/inst/clk_out1          | ifetch/opcplus4[29]_i_1_n_0     |                       |                9 |             30 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[31][31][0]  | rst_IBUF              |               21 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[25][31][0]  | rst_IBUF              |                7 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[29][31][0]  | rst_IBUF              |               16 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[3][31][0]   | rst_IBUF              |               14 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[13][31][0]  | rst_IBUF              |               12 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[15][31][0]  | rst_IBUF              |               16 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[1][31][0]   | rst_IBUF              |               17 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[10][31][0]  | rst_IBUF              |               13 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[19][31][0]  | rst_IBUF              |               13 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[28][31][0]  | rst_IBUF              |               17 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[20][31][0]  | rst_IBUF              |               15 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[24][31][0]  | rst_IBUF              |               10 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[27][31][0]  | rst_IBUF              |               17 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[4][31][0]   | rst_IBUF              |               16 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[22][31][0]  | rst_IBUF              |               16 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[11][31][0]  | rst_IBUF              |               14 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[5][31][0]   | rst_IBUF              |               18 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[14][31][0]  | rst_IBUF              |               15 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[6][31][0]   | rst_IBUF              |               22 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[26][31][0]  | rst_IBUF              |               15 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[7][31][0]   | rst_IBUF              |               24 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[18][31][0]  | rst_IBUF              |               14 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[23][31][0]  | rst_IBUF              |               19 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[16][31][0]  | rst_IBUF              |               11 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[30][31][0]  | rst_IBUF              |               23 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[8][31][0]   | rst_IBUF              |               16 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[9][31][0]   | rst_IBUF              |               28 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[2][31][0]   | rst_IBUF              |               16 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[17][31][0]  | rst_IBUF              |               13 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/E[0]                     | ifetch/SR[0]          |               12 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[21][31][0]  | rst_IBUF              |               16 |             32 |
+|  cpuclk/inst/clk_out1          | ifetch/register_reg[12][31][0]  | rst_IBUF              |               18 |             32 |
++--------------------------------+---------------------------------+-----------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     2 |
+| 4      |                     1 |
+| 8      |                     1 |
+| 16+    |                    37 |
++--------+-----------------------+
+
+

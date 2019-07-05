@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue May 28 21:36:47 2019
+# Process ID: 488
+# Current directory: C:/Users/Neko1/Desktop/project_2_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2552 C:\Users\Neko1\Desktop\project_2_7\project_1.xpr
+# Log file: C:/Users/Neko1/Desktop/project_2_7/vivado.log
+# Journal file: C:/Users/Neko1/Desktop/project_2_7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Neko1/Desktop/project_2_7/project_1.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Neko1/Desktop/project_2_7/project_1.runs/impl_1/minisys.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Neko1/Desktop/project_2_7/project_1.runs/impl_1/minisys.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

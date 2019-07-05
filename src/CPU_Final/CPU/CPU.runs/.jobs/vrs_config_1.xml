@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="CPU_control32_0_0_synth_1" LaunchDir="C:/Users/admin/Desktop/Computer Science/Digital Design/CPU/CPU.runs/CPU_control32_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/admin/Desktop/Computer Science/Digital Design/CPU/CPU.runs/CPU_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_StorageTop_0_0_synth_1" LaunchDir="C:/Users/admin/Desktop/Computer Science/Digital Design/CPU/CPU.runs/CPU_StorageTop_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_Idecode32_0_0_synth_1" LaunchDir="C:/Users/admin/Desktop/Computer Science/Digital Design/CPU/CPU.runs/CPU_Idecode32_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_Ifetc32_0_0_synth_1" LaunchDir="C:/Users/admin/Desktop/Computer Science/Digital Design/CPU/CPU.runs/CPU_Ifetc32_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CPU_Executs32_0_0_synth_1" LaunchDir="C:/Users/admin/Desktop/Computer Science/Digital Design/CPU/CPU.runs/CPU_Executs32_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/admin/Desktop/Computer Science/Digital Design/CPU/CPU.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="CPU_control32_0_0_synth_1"/>
+		<Parent Id="CPU_clk_wiz_0_0_synth_1"/>
+		<Parent Id="CPU_StorageTop_0_0_synth_1"/>
+		<Parent Id="CPU_Idecode32_0_0_synth_1"/>
+		<Parent Id="CPU_Ifetc32_0_0_synth_1"/>
+		<Parent Id="CPU_Executs32_0_0_synth_1"/>
+	</Run>
+</Runs>
+

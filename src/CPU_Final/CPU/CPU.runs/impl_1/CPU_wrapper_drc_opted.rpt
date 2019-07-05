@@ -1,0 +1,130 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon May 27 15:13:20 2019
+| Host         : DESKTOP-A1ENHH6 running 64-bit major release  (build 9200)
+| Command      : report_drc -file CPU_wrapper_drc_opted.rpt -pb CPU_wrapper_drc_opted.pb -rpx CPU_wrapper_drc_opted.rpx
+| Design       : CPU_wrapper
+| Device       : xc7a100tfgg484-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 17
++----------+------------------+-----------------------------------------------------+------------+
+| Rule     | Severity         | Description                                         | Violations |
++----------+------------------+-----------------------------------------------------+------------+
+| LUTLP-1  | Critical Warning | Combinatorial Loop Alert                            | 16         |
+| CFGBVS-1 | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
++----------+------------------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTLP-1#1 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[0]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[0]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[0]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#2 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[10]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[10]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[10]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#3 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[11]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[11]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[11]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#4 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[12]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[12]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[12]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#5 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[13]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[13]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[13]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#6 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[14]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[14]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[14]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#7 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[15]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[15]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[15]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#8 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[1]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[1]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[1]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#9 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[2]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[2]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[2]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#10 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[3]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[3]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[3]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#11 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[4]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[4]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[4]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#12 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[5]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[5]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[5]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#13 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[6]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[6]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[6]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#14 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[7]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[7]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[7]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#15 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[8]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[8]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[8]_INST_0_i_1.
+Related violations: <none>
+
+LUTLP-1#16 Critical Warning
+Combinatorial Loop Alert  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is CPU_i/StorageTop_0/inst/u_dmemory32/rdata[9]. Please evaluate your design. The cells in the loop are: CPU_i/StorageTop_0/inst/u_dmemory32/rdata[9]_INST_0, CPU_i/StorageTop_0/inst/u_ioread/rdata[9]_INST_0_i_1.
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+
